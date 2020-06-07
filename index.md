@@ -23,6 +23,7 @@ layout: outer
 		<div class="panel-block is-active entry-content">
 			{{ post.excerpt }}
 		</div>
+    {% if post.tags %}
 		<div class="panel-block is-active content entry-footer">
 			<small>Tagged: 
         {% for tag in post.tags %}
@@ -30,5 +31,6 @@ layout: outer
         {% endfor %}
       </small>
 		</div><!-- .entry-footer -->
+    {% endif %}
 	</article>
 {% endfor %}
