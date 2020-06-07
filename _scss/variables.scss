@@ -1,0 +1,29 @@
+// Set your brand colors
+$samplasion: #c44040;
+
+$dark: #262626;
+$dark-over: #2c2c2c;
+$dark-hover: $dark-over;
+$dark-border: #3c3c3c;
+$dark-over-hover: $dark-border;
+$dark-text: #d8d8d8;
+$dark-subtitle: $dark-text;
+$dark-title: #ececec;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $samplasion;
+$link: $samplasion;
+
+$footer-padding: 3rem 1.5rem 3rem;
+
+$bump-duration: 3.5s;
+$bump-distance: 15px;
+$rotation-duration: $bump-duration * 1;
+$rotation-radius: 5deg;
+
+$incline-radius: 5deg;
+$incline-duration: .5s;
+
+$list-maxed-height: 150px;
+$list-maxed-width: 0;
