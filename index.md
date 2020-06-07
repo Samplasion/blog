@@ -8,7 +8,7 @@ layout: outer
 
   <article class="panel is-primary">
 		<p class="panel-heading">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
 		</p>
 		<header class="panel-block is-active" style="flex-direction: column;">
       <div class="subtitle is-6">
