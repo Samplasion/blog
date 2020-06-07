@@ -29,7 +29,7 @@
 		}
 	}
 
-	:not(nav) a:not(.button) {
+	:not(.navbar) a:not(.button) {
 		transition: text-shadow $incline-duration ease;
 
 		&:hover {
