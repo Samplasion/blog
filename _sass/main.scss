@@ -1,8 +1,8 @@
 // The variables are imported by /assets/css/main.scss
 
 .panel {
-    .panel-heading {
-        a {
+    & .panel-heading {
+        & a {
             color: white;
         }
     }
