@@ -1,11 +1,11 @@
 ---
-layout: outer
+layout: layout
 ---
 
 <!-- {{ site.sass.sass_dir | relative_url }} -->
 
 {% for post in site.posts %}
-
+<div class="column is-half">
   <article class="panel is-primary">
 		<p class="panel-heading">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -35,4 +35,5 @@ layout: outer
 		</div><!-- .entry-footer -->
     {% endif %}
 	</article>
+</div>
 {% endfor %}
