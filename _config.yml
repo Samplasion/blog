@@ -4,6 +4,9 @@ title: "Samplasion"
 # Title separator (eg. " - ", outputs in "Page title - Site title")
 separator: " - "
 
+# The base url for the repo
+baseurl: /blog
+
 # SASS compiler
 sass:
   style: compact
