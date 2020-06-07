@@ -22,7 +22,10 @@ defaults:
       layout: "default"
 
 # Additional plugins
-plugins: paginate
+plugins: 
+  - jekyll-paginate
+  - jemoji
+  - jekyll-coffeescript
 
 # Pagination
 paginate: 10
