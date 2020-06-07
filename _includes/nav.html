@@ -1,11 +1,6 @@
-
 {% for item in include.nav %}
 <!-- {{ item }} -->
     <a class="navbar-item {% if item.url == page.url %}is-active{% endif %}" href="{{ item.url }}">
         {{ item.title }}
     </a>
-
-    {% if item.subnav %}
-        {% include nav.html nav=item.subnav %}
-    {% endif %}
 {% endfor %}
