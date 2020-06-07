@@ -1,2 +1,9 @@
 # The site title
 title: "Samplasion"
+
+# Title separator (eg. " - ", outputs in "Page title - Site title")
+separator: " - "
+
+# SASS compiler
+sass:
+  style: compact
