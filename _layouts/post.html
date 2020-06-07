@@ -3,12 +3,12 @@ layout: default
 ---
 
 {{content}}
-{% if page.comments %}
 
 <hr>
 
 <h2>Comments</h2>
 
+{% if page.comments %}
 <div class="comment-wrapper">
 <iframe id="myIframe" name='{"pageID": "post-{{ page.title | slugify }}", "pageURL": "{{ site.domain }}{{ site.baseurl }}{{ page.url }}", "title": "{{ page.title }}"}' src="https://comments.samplasion.js.org/" style="border-color: rgba(0,0,0,0);width: 100%;height: 100%;min-height: 100%;"></iframe>
 </div>
@@ -28,4 +28,10 @@ window.addEventListener('message', function(e) {
   }
 }, false);
 </script>
+{% else %}
+
+<p class="subtitle">
+    I'm sorry, I've decided that it's better to keep comments disabled for this post.
+</p>
+
 {% endif %}
