@@ -9,4 +9,5 @@ baseurl: /blog
 
 # SASS compiler
 sass:
+  sass_dir: _sass
   style: compact
