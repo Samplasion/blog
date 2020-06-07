@@ -20,3 +20,10 @@ defaults:
       type: "posts" #but the type must be posts
     values:
       layout: "default"
+
+# Additional plugins
+plugins: paginate
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"

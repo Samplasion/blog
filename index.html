@@ -4,7 +4,7 @@ layout: archive
 
 <!-- {{ site.sass.sass_dir | relative_url }} -->
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div class="column is-half">
   <article class="panel is-primary">
 		<p class="panel-heading">
@@ -37,3 +37,19 @@ layout: archive
 	</article>
 </div>
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
