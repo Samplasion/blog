@@ -6,11 +6,11 @@ date: 2019-11-03T16:00:00.000Z
 excerpt: Learn how to change the OS string that shows up in the About this Mac screen.
 header_image: /content/images/2019/11/Schermata-2019-11-03-alle-16.21.15.png
 tags: 
- - Apple
- - Computer
- - Hacking
- - Mac
- - Tutorial
+ - "Apple"
+ - "Computer"
+ - "Hacking"
+ - "Mac"
+ - "Tutorial"
 ---
 
 <blockquote><em><strong>Update 17/11/19</strong>: This post was updated with info pertaining how to change the icon</em></blockquote><p>Have you ever felt the need to rename macOS to whatever you like? Like, suppose you've just adopted a dog and you're wondering: “Wouldn't it be cool if I called my OS "dogOS"?”. Well, Today, I'm here to make your dreams come true.</p><blockquote><em><strong>Important Notice</strong>: I am not responsible for any damage caused to your system. Be cautious when following this tutorial.</em></blockquote><p>The first step will actually be to download the necessary files. We'll need <a href="https://github.com/alexzielenski/optool">optool</a>, <a href="https://apps.apple.com/app/ihex-hex-editor/id909566003?mt=12">iHex</a> and <a href="https://github.com/alexzielenski/ThemeEngine/releases/latest">Theme Engine</a>.</p><p>Next, go to the desktop and make two new folders, 'Originals' and 'Modified', then put <code>optool</code> into 'Modified'.</p><!--kg-card-begin: html--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

@@ -6,8 +6,8 @@ date: 2018-08-18T08:20:00.000Z
 excerpt: In this post we'll make a block converter in Ruby.
 header_image: /content/images/2019/10/blockconverter-gui.png
 tags: 
- - Nintendo
- - Computer
+ - "Nintendo"
+ - "Computer"
 ---
 
 <p>To make a block converter, we need to know what the conversions are:</p><!--kg-card-begin: html--><figure class="kg-card kg-card-hascaption">

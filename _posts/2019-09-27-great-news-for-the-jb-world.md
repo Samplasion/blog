@@ -6,9 +6,9 @@ date: 2019-09-27T15:15:01.000Z
 excerpt: It looks like the great minds of our wonderful community never stop surprising us. Why? @axi0mX on Twitter published a bootrom exploit called checkm8, for all devices A5-A11.
 header_image: https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 tags: 
- - Jailbreak
- - Apple
- - Hacking
+ - "Jailbreak"
+ - "Apple"
+ - "Hacking"
 ---
 
 <p>It looks like the great minds of our wonderful community never stop surprising us. Why? Well, 10 hours ago <a href="https://twitter.com/axi0mX">@axi0mX</a> on Twitter published this tweet:</p><figure class="kg-card kg-embed-card kg-card-hascaption"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">EPIC JAILBREAK: Introducing checkm8 (read &quot;checkmate&quot;), a permanent unpatchable bootrom exploit for hundreds of millions of iOS devices.<br><br>Most generations of iPhones and iPads are vulnerable: from iPhone 4S (A5 chip) to iPhone 8 and iPhone X (A11 chip). <a href="https://t.co/dQJtXb78sG">https://t.co/dQJtXb78sG</a></p>&mdash; axi0mX (@axi0mX) <a href="https://twitter.com/axi0mX/status/1177542201670168576?ref_src=twsrc%5Etfw">September 27, 2019</a></blockquote>

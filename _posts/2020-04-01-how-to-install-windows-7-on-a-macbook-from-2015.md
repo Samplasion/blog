@@ -6,11 +6,11 @@ date: 2020-04-01T08:00:00.000Z
 excerpt: Today, I'm gonna write a guide about how to install Windows 7 on a MacBook Pro, Retina, 13-inch, early 2015. No, this is not an April Fools joke.
 header_image: /content/images/2020/04/macbook-pro-windows-450x290.jpg
 tags: 
- - Apple
- - Mac
- - Tutorial
- - Dual-Boot
- - Computer
+ - "Apple"
+ - "Mac"
+ - "Tutorial"
+ - "Dual-Boot"
+ - "Computer"
 ---
 
 <p>Last week I posted <a href="/how-i-dual-booted-windows-10-and-windows-7-on-a-macbook-pro-retina-early-2015/">an article about my dual boot setup</a>. Today, I'm gonna write a guide about how to install Windows 7 on a MacBook Pro, Retina, 13-inch, early 2015. No, this is not an April Fools joke.</p><blockquote><strong>Important</strong>: As far as I'm aware, older MacBook Pros have the built-in capability of running Windows 7, while there's no way newer ones can even remotely think about it. If you're unsure if it's supported, please don't try this.</blockquote><!--kg-card-begin: html--><p>The things you need are:

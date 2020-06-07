@@ -6,10 +6,10 @@ date: 2019-10-03T20:34:30.000Z
 excerpt: If you use the terminal on a regular basis, you know it looks kinda bad. But it's quite understandable, because the shells were made to be useful, not nice-looking. If you want to have a nice terminal, though, nothing can stop you.
 header_image: https://images.unsplash.com/photo-1524741978410-350ba91a70d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 tags: 
- - Apple
- - Computer
- - Mac
- - Linux
+ - "Apple"
+ - "Computer"
+ - "Mac"
+ - "Linux"
 ---
 
 <p>If you use the terminal on a regular basis, you know it looks kinda bad. But it's quite understandable, because the shells were made to be useful, not nice-looking. If you want to have a nice terminal, though, nothing can stop you. </p><p>We'll be installing Z-Shell, Oh-My-Zsh and powerlevel9k to customize the look and feel of our terminal.</p><h4 id="step-1-z-shell">Step 1: Z-Shell</h4><blockquote><strong>Note</strong>: Since macOS 10.15 Catalina, Apple changed the default shell to <code>zsh</code>, so if you happen to be on macOS 10.15 (or greater, for the future), you can skip this section.</blockquote><p><code>zsh</code> is packed with a ton of features; to name a few:</p><ul><li>Automatic cd: Just type the name of the directory</li><li>Recursive path expansion: For example “/u/lo/b” expands to “/usr/local/bin”</li><li>Spelling correction and approximate completion: If you make a minor mistake typing a directory name, ZSH will fix it for you</li></ul><h5 id="linux">Linux</h5><p>To install <code>zsh</code>, open a window of the Terminal and type:</p><pre><code class="language-bash">$ sudo apt-get install zsh

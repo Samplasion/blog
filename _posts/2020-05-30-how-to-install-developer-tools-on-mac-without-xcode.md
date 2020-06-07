@@ -6,11 +6,11 @@ date: 2020-05-30T08:00:00.000Z
 excerpt: See how you can download the Developer Tools without downloading 2+ GB of Xcode.
 header_image: https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 tags: 
- - Apple
- - Computer
- - Mac
- - Tools
- - Tutorial
+ - "Apple"
+ - "Computer"
+ - "Mac"
+ - "Tools"
+ - "Tutorial"
 ---
 
 <p>I've mentioned it multiple times in previous posts, but I feel like writing this post so I can just link to it when needed.</p><p>What are developer tools? Developer tools are a collection of commands (more than 50) that are commonly used by developers, such as <code>git</code>, <code>svn</code>, <code>perl</code> and other similar commands.</p><p>To install them, run:</p><!--kg-card-begin: html--><pre class="command-line language-bash" data-host="UsersMac" data-output="2"><code class=" language-bash">xcode-select --install

@@ -6,12 +6,12 @@ date: 2020-06-13T08:00:00.000Z
 excerpt: It's not easy to notice. Heck, I didn't even notice it until I read about it on Reddit. So what's the matter?
 header_image: https://images.unsplash.com/photo-1565300667498-2843c56b4603?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 tags: 
- - CSS
- - JS
- - JavaScript
- - Cascading Style Sheets
- - HTML
- - HyperText Markup Language
+ - "CSS"
+ - "JS"
+ - "JavaScript"
+ - "Cascading Style Sheets"
+ - "HTML"
+ - "HyperText Markup Language"
 ---
 
 <!--kg-card-begin: html--><!-- wp:paragraph -->

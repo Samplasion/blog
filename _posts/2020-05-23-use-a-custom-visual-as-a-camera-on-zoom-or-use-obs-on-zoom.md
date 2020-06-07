@@ -6,14 +6,14 @@ date: 2020-05-23T08:00:00.000Z
 excerpt: If you're here, you're looking for a way to pretend you're listening to your teacher while you're not. Well, you're in the right place.
 header_image: https://images.unsplash.com/photo-1586980368323-8ce5db4c85ce?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 tags: 
- - Computer
- - Hack
- - Mac
- - PC
- - Tools
- - Tutorial
- - Zoom
- - Trick
+ - "Computer"
+ - "Hack"
+ - "Mac"
+ - "PC"
+ - "Tools"
+ - "Tutorial"
+ - "Zoom"
+ - "Trick"
 ---
 
 <p>If you're here, you're looking for a way to pretend you're listening to your teacher while you're not (if you know what I mean :smirk:), or maybe you want to apply all kinds of weird effects to your video, or maybe you don't even have a camera but you want to make your rectangle a little more interesting. Well, you're in the right place.</p><p>So first of all, you'll have to <a href="https://obsproject.com/download">download OBS</a>. We'll use this to set up a virtual camera that'll show custom visuals. Once you've downloaded it, set it up (don't worry if it asks for Twitch details, just close out of that window). Once you've done that, you'll also have to download the Virtual Camera plugin (<a href="https://github.com/Fenrirthviti/obs-virtual-cam/releases">Windows</a>, <a href="https://github.com/johnboiles/obs-mac-virtualcam">Mac</a>, <a href="https://github.com/CatxFish/obs-v4l2sink">Linux</a>, platform-specific installation instructions are within each link).</p><p>Once you've done that, restart OBS studio and go to Tools -&gt; Start VirtualCam (The name may vary depending on the system). Then, go into Zoom's settings -&gt; Video and choose the virtual OBS camera. If you can't see it on Mac, run:</p><!--kg-card-begin: markdown--><pre><code class="language-sh">$ xcode-select --install

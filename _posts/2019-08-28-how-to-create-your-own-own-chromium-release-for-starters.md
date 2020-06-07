@@ -6,10 +6,10 @@ date: 2019-08-28T16:43:00.000Z
 excerpt: In this post, we'll take a look at a comprehensive way to build a custom Chromium release.
 header_image: https://images.unsplash.com/photo-1504292004442-f285299403fa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 tags: 
- - Tutorial
- - Mac
- - Linux
- - Windows
+ - "Tutorial"
+ - "Mac"
+ - "Linux"
+ - "Windows"
 ---
 
 <p>The other day I downloaded the Avast antivirus and I noticed it installed the Secure browser. When I opened it, it didn't take long until I noticed it's just a Chromium based browser with built-in extensions.</p><p>After that, I started thinking, "Is it hard to create a Chromium-based browser?". Today, I can certainly say <strong>the answer is no</strong>.</p><p>But before actually starting with this tutorial, I should say that if you haven't got either a fast connection or much, much time, don't even bother starting this tutorial, because as stated in the official Chromium website, the download of the source code takes a long time on fast connections. I personally haven't got that fast of a connection, but I still managed to download it.</p><p>Don't get intimidated by the length of this tutorial; only selected sections of it will apply to you.</p><p>So, without further ado, let's start.</p><h4 id="preparation">Preparation</h4><!--kg-card-begin: html--><p>There are some things that you'll need to build your own Chromium release.</p>
