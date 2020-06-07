@@ -47,7 +47,8 @@
                                 <!-- {{site.data.navigation}} -->
                                 {% for item in site.data.navigation.primary %}
                                 <!-- {{ item }} -->
-                                    <a class="navbar-item {% if item.url == page.url %}is-active{% endif %}" href="{{ item.url }}">
+                                    {% assign url = item.url | absolute_url %}
+                                    <a class="navbar-item{% if url == page.url %} is-active{% endif %}" href="{{ url }}">
                                         {{ item.title }}
                                     </a>
                                 {% endfor %}
