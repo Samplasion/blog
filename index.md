@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: archive
 ---
 
 <!-- {{ site.sass.sass_dir | relative_url }} -->
