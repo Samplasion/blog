@@ -1,0 +1,39 @@
+// The variables are imported by /assets/css/main.scss
+
+.panel {
+    .panel-header {
+        a {
+            color: white;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+	.incline article {
+		transform: rotateZ(0);
+		transition: transform $incline-duration ease;
+	}
+
+	.incline-cw {
+		&:hover article {
+			transform: rotateZ($incline-radius);
+		}
+	}
+
+	.incline-ccw {
+		transform: rotateZ(0);
+		transition: transform $incline-duration ease;
+
+		&:hover article {
+			transform: rotateZ(-$incline-radius);
+		}
+	}
+
+	:not(nav) a:not(.button) {
+		transition: text-shadow $incline-duration ease;
+
+		&:hover {
+			text-shadow: #030303 0rem 0.3rem 0.5rem;
+		}
+	}
+}

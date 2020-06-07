@@ -7,43 +7,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 @import "variables.scss";
-
-.panel {
-    .panel-header {
-        a {
-            color: white;
-        }
-    }
-}
-
-@media all and (min-width: 1024px) {
-	.incline article {
-		transform: rotateZ(0);
-		transition: transform $incline-duration ease;
-	}
-
-	.incline-cw {
-		&:hover article {
-			transform: rotateZ($incline-radius);
-		}
-	}
-
-	.incline-ccw {
-		transform: rotateZ(0);
-		transition: transform $incline-duration ease;
-
-		&:hover article {
-			transform: rotateZ(-$incline-radius);
-		}
-	}
-
-	:not(nav) a:not(.button) {
-		transition: text-shadow $incline-duration ease;
-
-		&:hover {
-			text-shadow: #030303 0rem 0.3rem 0.5rem;
-		}
-	}
-}
-
+@import "main.scss";
 @import "bulma/bulma.scss";
