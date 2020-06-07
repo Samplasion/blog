@@ -6,7 +6,7 @@ layout: outer
 
   <article class="panel is-primary">
 		<p class="panel-heading">
-      {{ post.title }}
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
 		</p>
 		<header class="panel-block is-active" style="flex-direction: column;">
       <div class="subtitle is-6">
