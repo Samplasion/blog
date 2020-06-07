@@ -11,3 +11,12 @@ baseurl: /blog
 sass:
   sass_dir: _sass
   style: compact
+
+# Default values
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" #but the type must be posts
+    values:
+      layout: "default"
