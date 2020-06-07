@@ -1,0 +1,25 @@
+---
+title: How to modify the macOS system name and icon
+slug: how-to-modify-macos-system-name
+comment_id: 5dbef1920dfeb40081d9fef4
+date: 2019-11-03T16:00:00.000Z
+excerpt: Learn how to change the OS string that shows up in the About this Mac screen.
+header_image: /content/images/2019/11/Schermata-2019-11-03-alle-16.21.15.png
+tags: 
+ - Apple
+ - Computer
+ - Hacking
+ - Mac
+ - Tutorial
+---
+
+<blockquote><em><strong>Update 17/11/19</strong>: This post was updated with info pertaining how to change the icon</em></blockquote><p>Have you ever felt the need to rename macOS to whatever you like? Like, suppose you've just adopted a dog and you're wondering: “Wouldn't it be cool if I called my OS "dogOS"?”. Well, Today, I'm here to make your dreams come true.</p><blockquote><em><strong>Important Notice</strong>: I am not responsible for any damage caused to your system. Be cautious when following this tutorial.</em></blockquote><p>The first step will actually be to download the necessary files. We'll need <a href="https://github.com/alexzielenski/optool">optool</a>, <a href="https://apps.apple.com/app/ihex-hex-editor/id909566003?mt=12">iHex</a> and <a href="https://github.com/alexzielenski/ThemeEngine/releases/latest">Theme Engine</a>.</p><p>Next, go to the desktop and make two new folders, 'Originals' and 'Modified', then put <code>optool</code> into 'Modified'.</p><!--kg-card-begin: html--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2629383633762978"
+     data-ad-slot="2708522261"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><!--kg-card-end: html--><p>Go to <code>/Applications/Utilities/System Information.app/Contents/MacOS</code> and copy the <code>System Information</code> binary into <strong>both</strong> of those folders (the "Original" folder will serve as backup, so make sure to <strong>NOT</strong> ever lose that).</p><p>Open Terminal, then run <code>cd ~/Desktop/Modified</code> and run <code>./optool strip -w -t System\ Information</code> to strip the code signature (this is needed to run the binary, as macOS refuses to open binaries signed with a wrong certificate).</p><p>Open the System Information file in iHex, use <code>⌘F</code> and switch to "Text" mode to find the <code>macOS &lt;version name&gt;</code> (replace <code>&lt;version name&gt;</code> with your version's official name, note that it is <strong><strong>case-sensitive</strong></strong>). Replace it with what you want, as long as it's <strong>the same length as before</strong> (spaces do count, so assume that you're on Mojave, your total string would need to be 12 in length). Look for just <code>macOS</code> and change the instance of 'macOS' that comes up near <code>OS_VERSION_BUILD</code> to match with the first part of the string you changed earlier (I did macOS -&gt; samOS). Don't forget to save (Depending on the system configuration it may or may not ask for a password).</p><p>Now copy this modified <code>System Information</code> binary to <code>/Applications/Utilities/System Information.app/Contents/MacOS</code> and then enter your password to finalize the process.</p><p>Next, to edit the icon, there are two methods, depending on the version. If one doesn't work, move on to the next.</p><ol><li>Go to <code>/Applications/Utilities/System Information.app/Contents/Resources</code> and copy the file <code>Assets.car</code> to both "Original" and "Modified". Then, open <code>~/Desktop/Modified/Assets.car</code> with Theme Engine and replace any stock icon with the one of your choice. Save and replace the one in <code>/Applications/Utilities/System Information.app/Contents/Resources</code> with it.</li><li>Go to <code>/Applications/Utilities/System Information.app/Contents/Resources</code> and copy every icon you want to modify to "Original". Then, convert every icon you want to replace to the target format of the stock icon (for example, <code>SystemLogo.tiff</code> is a <strong>tiff</strong> file, so I'll want to convert my replacement to tiff) and rename it <strong>exactly</strong> like the stock one. Then, drag the modified icon into <code>/Applications/Utilities/System Information.app/Contents/Resources</code> and confirm by entering your password.</li></ol><p>Once you've done that, the only thing that's left to do is see if it works! Open the <strong>About this Mac</strong> menu ( &gt; About this Mac) and watch magic happen under your eyes (you may have to <code>⌘Q</code> it and retry). If it didn't work, make sure you followed every step correctly (in every case you can restart the process by restoring the backup). Ok, for this post it's all, I hope to see you in the next one! See ya!</p><!--kg-card-begin: html--><s>Well, technically, I was helped in writing part of this post by Discord user Alex Fox#0346, so credit goes to him</s><!--kg-card-end: html-->
