@@ -1,11 +1,5 @@
 nav:
-  - title: Deployment
-    url: deployment.html
-    subnav:
-      - title: Heroku
-        url: heroku.html
-        subnav:
-          - title: Jekyll on Heroku
-            url: jekyll-on-heroku.html
-  - title: Help
-    url: help.html
+  - title: Home
+    url: https://samplasion.js.org
+  - title: Blog
+    url: /blog # Will be changed to https://blog.samplasion.js.org
