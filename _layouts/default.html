@@ -46,8 +46,9 @@
                             <div class="navbar-end">
                                 <!-- {{site.data.navigation}} -->
                                 {% for item in site.data.navigation.primary %}
-                                <!-- {{ item }} -->
+                                    <!-- {{ item }} -->
                                     {% assign url = item.url | absolute_url %}
+                                    <!-- {{url}} -->
                                     <a class="navbar-item{% if url == page.url %} is-active{% endif %}" href="{{ url }}">
                                         {{ item.title }}
                                     </a>
