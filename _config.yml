@@ -31,3 +31,11 @@ plugins:
 # Pagination
 paginate: 10
 paginate_path: "/page/:num/"
+
+# Author
+author:
+  url: https://samplasion.js.org
+  name: Samplasion
+  links:
+    - title: Twitter
+      url: https://twitter.com/Samplasion
