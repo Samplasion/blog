@@ -5,6 +5,10 @@
 
 @import "/_scss/variables.scss";
 
+$family-sans-serif: "Nunito", sans-serif;
 
+body {
+    font-family: $family-sans-serif;
+}
 
 @import '/_scss/bulma/bulma.sass';
