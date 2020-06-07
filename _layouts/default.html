@@ -49,7 +49,7 @@
                                     <!-- {{ item }} -->
                                     {% assign url = item.url | absolute_url %}
                                     <!-- {{url}} -->
-                                    <a class="navbar-item{% if url == page.url %} is-active{% endif %}" href="{{ url }}">
+                                    <a class="navbar-item{% if url == page.url | absolute_url %} is-active{% endif %}" href="{{ url }}">
                                         {{ item.title }}
                                     </a>
                                 {% endfor %}
