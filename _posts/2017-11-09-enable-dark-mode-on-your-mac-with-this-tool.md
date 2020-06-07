@@ -1,10 +1,10 @@
 ---
-title: Enable Dark Mode on your Mac with this tool
+title: "Enable Dark Mode on your Mac with this tool"
 slug: enable-dark-mode-on-your-mac-with-this-tool
 comment_id: 5d93b51a97132a02c4355736
 date: 2017-11-09T18:18:00.000Z
-excerpt: In this post, we'll see how to darken macOS apps in a neat way!
-header_image: null
+excerpt: "In this post, we'll see how to darken macOS apps in a neat way!"
+header_image: "null"
 tags: 
  - "Apple"
  - "Tools"

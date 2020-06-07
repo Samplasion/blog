@@ -1,10 +1,10 @@
 ---
-title: Welcome, Ghost!
+title: "Welcome, Ghost!"
 slug: welcome-ghost
 comment_id: 5d93b51a97132a02c4355732
 date: 2019-08-20T11:20:03.000Z
-excerpt: A brief description of the new blog backend.
-header_image: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
+excerpt: "A brief description of the new blog backend."
+header_image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Meta"
  - "Blog"

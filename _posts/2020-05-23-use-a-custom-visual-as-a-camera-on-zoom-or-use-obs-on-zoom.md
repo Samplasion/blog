@@ -1,10 +1,10 @@
 ---
-title: Use a custom visual as a camera on Zoom and other services (aka: use OBS on Zoom and others)
+title: "Use a custom visual as a camera on Zoom and other services (aka: use OBS on Zoom and others)"
 slug: use-a-custom-visual-as-a-camera-on-zoom-or-use-obs-on-zoom
 comment_id: 5ec5098e39558200aa3d4b0c
 date: 2020-05-23T08:00:00.000Z
-excerpt: If you're here, you're looking for a way to pretend you're listening to your teacher while you're not. Well, you're in the right place.
-header_image: https://images.unsplash.com/photo-1586980368323-8ce5db4c85ce?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
+excerpt: "If you're here, you're looking for a way to pretend you're listening to your teacher while you're not. Well, you're in the right place."
+header_image: "https://images.unsplash.com/photo-1586980368323-8ce5db4c85ce?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Computer"
  - "Hack"

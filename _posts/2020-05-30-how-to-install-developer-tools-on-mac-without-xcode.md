@@ -1,10 +1,10 @@
 ---
-title: How to install developer tools on Mac without Xcode
+title: "How to install developer tools on Mac without Xcode"
 slug: how-to-install-developer-tools-on-mac-without-xcode
 comment_id: 5ec63bcf1e6c2e0c683e5913
 date: 2020-05-30T08:00:00.000Z
-excerpt: See how you can download the Developer Tools without downloading 2+ GB of Xcode.
-header_image: https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
+excerpt: "See how you can download the Developer Tools without downloading 2+ GB of Xcode."
+header_image: "https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Apple"
  - "Computer"

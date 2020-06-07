@@ -1,10 +1,10 @@
 ---
-title: Tech Showcase: Yamamura
+title: "Tech Showcase: Yamamura"
 slug: tech-showcase-yamamura
 comment_id: 5d93b51a97132a02c435573a
 date: 2019-07-17T13:42:00.000Z
-excerpt: Today I want to showcase a bot NightYoshi and I made.
-header_image: /content/images/2019/11/Schermata-2019-08-20-alle-15.35.03.png
+excerpt: "Today I want to showcase a bot NightYoshi and I made."
+header_image: "/content/images/2019/11/Schermata-2019-08-20-alle-15.35.03.png"
 tags: 
  - "Tech Showcase"
  - "Bot"

@@ -1,10 +1,10 @@
 ---
-title: How to install Windows 7 on a MacBook from 2015
+title: "How to install Windows 7 on a MacBook from 2015"
 slug: how-to-install-windows-7-on-a-macbook-from-2015
 comment_id: 5e7b0e350feaf7007ba585c4
 date: 2020-04-01T08:00:00.000Z
-excerpt: Today, I'm gonna write a guide about how to install Windows 7 on a MacBook Pro, Retina, 13-inch, early 2015. No, this is not an April Fools joke.
-header_image: /content/images/2020/04/macbook-pro-windows-450x290.jpg
+excerpt: "Today, I'm gonna write a guide about how to install Windows 7 on a MacBook Pro, Retina, 13-inch, early 2015. No, this is not an April Fools joke."
+header_image: "/content/images/2020/04/macbook-pro-windows-450x290.jpg"
 tags: 
  - "Apple"
  - "Mac"

@@ -1,10 +1,10 @@
 ---
-title: My recommendations for the perfect Nintendo 3DS
+title: "My recommendations for the perfect Nintendo 3DS"
 slug: my-recommendations-for-the-perfect-nintendo-3ds
 comment_id: 5d93b51a97132a02c4355735
 date: 2017-11-08T18:18:00.000Z
-excerpt: In this post, I'll show you my recommendations for the perfect unmodified Nintendo 3DS.
-header_image: /content/images/2019/11/home-page-feature.jpg
+excerpt: "In this post, I'll show you my recommendations for the perfect unmodified Nintendo 3DS."
+header_image: "/content/images/2019/11/home-page-feature.jpg"
 tags: 
  - "Nintendo"
  - "Cia"

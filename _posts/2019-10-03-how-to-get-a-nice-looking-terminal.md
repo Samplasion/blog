@@ -1,10 +1,10 @@
 ---
-title: How to get a nice-looking terminal
+title: "How to get a nice-looking terminal"
 slug: how-to-get-a-nice-looking-terminal
 comment_id: 5d949225819a4002bbb042e3
 date: 2019-10-03T20:34:30.000Z
-excerpt: If you use the terminal on a regular basis, you know it looks kinda bad. But it's quite understandable, because the shells were made to be useful, not nice-looking. If you want to have a nice terminal, though, nothing can stop you.
-header_image: https://images.unsplash.com/photo-1524741978410-350ba91a70d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
+excerpt: "If you use the terminal on a regular basis, you know it looks kinda bad. But it's quite understandable, because the shells were made to be useful, not nice-looking. If you want to have a nice terminal, though, nothing can stop you."
+header_image: "https://images.unsplash.com/photo-1524741978410-350ba91a70d7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Apple"
  - "Computer"

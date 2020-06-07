@@ -1,10 +1,10 @@
 ---
-title: Do NOT use Freenom for long-term projects
+title: "Do NOT use Freenom for long-term projects"
 slug: do-not-use-freenom-for-long-term-projects
 comment_id: 5db9c63e3a3e3000823fc6be
 date: 2019-10-30T17:30:23.000Z
-excerpt: Recently, I've switched domains from my old .tk domain (samplasion.tk) to a new one under the protective wing of JS.ORG (many thanks to them for offering me this free space). But what pushed me to do that?
-header_image: https://images.unsplash.com/photo-1533228100845-08145b01de14?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
+excerpt: "Recently, I've switched domains from my old .tk domain (samplasion.tk) to a new one under the protective wing of JS.ORG (many thanks to them for offering me this free space). But what pushed me to do that?"
+header_image: "https://images.unsplash.com/photo-1533228100845-08145b01de14?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Meta"
  - "Blog"

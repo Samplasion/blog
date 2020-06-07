@@ -1,10 +1,10 @@
 ---
-title: CSS: What’s the difference between em and rem?
+title: "CSS: What’s the difference between em and rem?"
 slug: css-whats-the-difference-between-em-and-rem
 comment_id: 5ec6c80cbaf75100d8247156
 date: 2020-06-06T08:00:00.000Z
-excerpt: If you have tried working with CSS, you'll have noticed two special units: em and rem — but what's the difference?
-header_image: https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
+excerpt: "If you have tried working with CSS, you'll have noticed two special units: em and rem — but what's the difference?"
+header_image: "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Cascading Style Sheets"
  - "CSS"

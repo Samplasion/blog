@@ -1,10 +1,10 @@
 ---
-title: The Nintendo Switch Lite JoyCon drift problem is real
+title: "The Nintendo Switch Lite JoyCon drift problem is real"
 slug: the-nintendo-switch-lite-joy-con-drift-problem-is-real
 comment_id: 5d93b51a97132a02c4355740
 date: 2019-10-04T19:30:41.000Z
-excerpt: It's only been a little more than a couple weeks since the release of the new Nintendo Switch Lite, and it's already been found that its sticks are the same as its big brother's...
-header_image: https://images.unsplash.com/photo-1569089630965-daa2d5aa3860?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
+excerpt: "It's only been a little more than a couple weeks since the release of the new Nintendo Switch Lite, and it's already been found that its sticks are the same as its big brother's..."
+header_image: "https://images.unsplash.com/photo-1569089630965-daa2d5aa3860?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Nintendo"
 ---
