@@ -2,7 +2,7 @@
 layout: outer
 ---
 
-{{ site.sass.sass_dir | relative_url }}
+<!-- {{ site.sass.sass_dir | relative_url }} -->
 
 {% for post in site.posts %}
 
