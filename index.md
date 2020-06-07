@@ -1,6 +1,5 @@
 ---
-title: Test
-layout: default
+layout: outer
 ---
 
-Test
+Samplasion's Blog
