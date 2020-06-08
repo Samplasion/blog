@@ -69,11 +69,13 @@
 
     <footer class="footer">
         <div class="content has-text-centered">
-          <p>
-            <strong>{{ site.title }}</strong> by <a href="{{ site.author.url }}">{{ site.author.name }}</a>.
-          </p>
+            <p>
+                <strong>{{ site.title }}</strong> by <a href="{{ site.author.url }}">{{ site.author.name }}</a>.
+            </p>
         </div>
-      </footer>
+    </footer>
+
+    {% include footer-scripts.html %}
 </body>
 
 </html>
