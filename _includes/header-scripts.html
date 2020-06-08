@@ -30,7 +30,7 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:url" content="{{ page.url }}">
-<meta property="article:author" content="Samplasion">
+<meta property="article:author" content="{{ site.author.name }}">
 {% if page.header_image %}
     <meta property="og:image" content="{{ page.header_image }}">
 {% else %}
@@ -45,7 +45,7 @@
     {
       "@context": "http://schema.org/",
       "@type": "NewsArticle",
-      "headline": "{% if page.title %}{{ page.title }}{{ site.separator}}{{ site.title }}{% else %}{{ site.title }}{% endif %}",
+      "headline": "{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}",
 {% if page.date %}
       "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
 {% endif %}
