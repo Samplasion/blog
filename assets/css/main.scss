@@ -4,9 +4,10 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+//@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 @import "variables.scss";
 @import "index.scss";
 @import "article.scss";
-@import "bulma/bulma.scss";
+// @import "bulma/bulma.scss";
+@import url("https://samplasion.js.org/css/styles.min.css");
