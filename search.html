@@ -4,10 +4,15 @@ permalink: /search
 layout: default
 ---
 
-<input type="text" id="search-input" placeholder="Search posts...">
+<h1 class="title is-1">Search</h1>
+<div class="field">
+    <div class="control">
+        <input type="text" id="search-input" placeholder="Search posts...">
+    </div>
+    <p class="help">The results will be shown below.</p>
+</div>
 <ul class="content" id="results-container"></ul>
 
-<!-- or without installing anything -->
 <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
 <script>
     var sjs = SimpleJekyllSearch({
