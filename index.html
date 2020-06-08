@@ -5,7 +5,7 @@ layout: archive
 <!-- {{ site.sass.sass_dir | relative_url }} -->
 
 {% for post in paginator.posts %}
-<div class="column is-half">
+<div class="post column is-half">
   <article class="panel is-primary">
 		<p class="panel-heading">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -17,7 +17,7 @@ layout: archive
 		</header><!-- .entry-header -->
     {% if post.header_image %}
       <div class="card-image panel-block is-active" style="padding:0;margin:0;">
-        <figure class="image is-16by9" style="height: 100%;">
+        <figure class="image is-16by9" style="height: 100%;width: 100%;">
           {% if post.header_image contains "://" %}
             <img src="{{ post.header_image }}" />
           {% else %}
