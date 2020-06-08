@@ -10,7 +10,7 @@
 
 <!-- Meta tags -->
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
-<meta name="keywords" content="{{ site.tags | join: ', ' }}{% if page.tags %}, {{ page.tags | join: ', ' }}{% endif %}">
+<meta name="keywords" content="{{ site.tags | join: ', ' }}">
 <meta name="author" content="{{ site.author.name }}">
 
 {% if page.socials %}
