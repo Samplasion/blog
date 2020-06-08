@@ -1,10 +1,11 @@
 ---
 title: Search
 permalink: /search
+layout: default
 ---
 
 <input type="text" id="search-input" placeholder="Search posts...">
-<ul id="results-container"></ul>
+<ul class="content" id="results-container"></ul>
 
 <!-- or without installing anything -->
 <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
@@ -12,6 +13,6 @@ permalink: /search
     var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        json: '/posts.json'
+        json: '/posts.json',
     })
 </script>
