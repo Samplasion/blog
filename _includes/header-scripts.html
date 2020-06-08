@@ -38,7 +38,9 @@
       "@context": "http://schema.org/",
       "@type": "NewsArticle",
       "headline": "{% if page.title %}{{ page.title }}{{ site.separator}}{{ site.title }}{% else %}{{ site.title }}{% endif %}",
+{% if page.date %}
       "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+{% endif %}
       "description": "{% if page.excerpt %}{{page.excerpt}}{% elsif site.description %}{{site.description}}{% else %}{{ site.title }}{% endif %}",
 {% if page.header_image %}
       "image": {
