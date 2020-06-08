@@ -40,4 +40,8 @@ author:
     - title: Twitter
       url: https://twitter.com/Samplasion
 
+# Hide scheduled posts
 future: false
+
+# Set post permalink
+permalink: /:title
