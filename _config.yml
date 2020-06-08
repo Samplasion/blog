@@ -57,3 +57,13 @@ future: false
 
 # Set post permalink
 permalink: /:title
+
+# Tags
+tags:
+  - Apple
+  - Samplasion
+  - Blog
+  - Technology
+  - Web
+  - PC
+  - Linux
