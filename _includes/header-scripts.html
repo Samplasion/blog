@@ -1,0 +1,33 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149345636-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149345636-1');
+</script>
+
+<!-- Twitter Cards -->
+<meta name="twitter:site" content="{{ site.title }}">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt}}{% elsif site.description %}{{site.description}}{% else %}{{ site.title }}{% endif %}">
+{% if page.header_image %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ page.header_image }}">
+{% else %}
+    <meta name="twitter:card" content="summary">
+{% endif %}
+
+<!-- [F]acebook OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:url" content="{{ page.url }}">
+<meta property="article:author" content="Samplasion">
+{% if page.header_image %}
+    <meta property="og:image" content="{{ page.header_image }}">
+{% endif %}
+{% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+{% endif %}
