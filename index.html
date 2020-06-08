@@ -5,39 +5,5 @@ layout: archive
 <!-- {{ site.sass.sass_dir | relative_url }} -->
 
 {% for post in paginator.posts %}
-<div class="post column is-half">
-  <article class="panel is-primary">
-		<p class="panel-heading">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-		</p>
-		<header class="panel-block is-active" style="flex-direction: column;">
-      <div class="subtitle is-6">
-        Posted on {{ post.date | date_to_long_string }}
-      </div><!-- .entry-meta -->
-		</header><!-- .entry-header -->
-    {% if post.header_image %}
-      <div class="card-image panel-block is-active" style="padding:0;margin:0;">
-        <figure class="image is-16by9" style="height: 100%;width: 100%;">
-          {% if post.header_image contains "://" %}
-            <img src="{{ post.header_image }}" />
-          {% else %}
-            <img src="{{ site.baseurl }}{{ post.header_image }}" />
-          {% endif %}
-				</figure>
-			</div>
-    {% endif %}
-		<div class="panel-block is-active entry-content">
-			<span>{{ post.excerpt }}&nbsp;&mdash;&nbsp;<a href="{{ post.url | relative_url }}">Read&nbsp;more&nbsp;&raquo;</a></span>
-		</div>
-    {% if post.tags %}
-		<div class="panel-block is-active content entry-footer">
-			<small>Tagged: 
-        {% for tag in post.tags %}
-	        <a href="#{{ tag | slugify }}"> {{ tag }} </a>
-        {% endfor %}
-      </small>
-		</div><!-- .entry-footer -->
-    {% endif %}
-	</article>
-</div>
+  {% include post-panel.html post=post %}
 {% endfor %}
