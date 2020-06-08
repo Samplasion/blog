@@ -2,35 +2,40 @@
 layout: default
 ---
 
-<h1 class="title is-1">{{ page.title }}</h1>
-<div class="subtitle is-6">
-    Posted on {{ page.date | date_to_long_string }}
-</div>
+<!-- TODO: Add article wrapper around post + <p> margin on top and bottom + hide future dates somehow -->
 
-{{content}}
+<article class="post" id="{{ page.title | slugify }}">
+    <h1 class="title is-1">{{ page.title }}</h1>
+    <div class="subtitle is-6">
+        Posted on {{ page.date | date_to_long_string }}
+    </div>
 
-<hr>
+    {{content}}
 
-<h2 class="title is-2">Comments</h2>
+    <hr>
 
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-var disqus_config = function () {
-	this.page.url = window.location.href;  
-	this.page.identifier = "ghost-{{ page.title | slugify }}"
-};
-(function() {
-var d = document, s = d.createElement('script');
-s.src = 'https://samplasionweb.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-{% else %}
+    <h2 class="title is-2">Comments</h2>
 
-<p class="subtitle">
-    I'm sorry, I've decided that it's better to keep comments disabled for this post.
-</p>
+    {% if page.comments %}
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = window.location.href;  
+        this.page.identifier = "ghost-{{ page.title | slugify }}"
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://samplasionweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    {% else %}
 
-{% endif %}
+    <p class="subtitle">
+        I'm sorry, I've decided that it's better to keep comments disabled for this post.
+    </p>
+
+    {% endif %}
+
+</article>
