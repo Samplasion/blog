@@ -4,7 +4,7 @@ slug: how-to-modify-macos-system-name
 comment_id: 5dbef1920dfeb40081d9fef4
 date: 2019-11-03T16:00:00.000Z
 excerpt: "Learn how to change the OS string that shows up in the About this Mac screen."
-header_image: "/content/images/2019/11/Schermata-2019-11-03-alle-16.21.15.png"
+header_image: "/assets/images/2019/11/Schermata-2019-11-03-alle-16.21.15.png"
 tags: 
  - "Apple"
  - "Computer"

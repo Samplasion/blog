@@ -4,7 +4,7 @@ slug: the-unc0ver-jailbreak-for-starters
 comment_id: 5d93b51a97132a02c435573f
 date: 2019-09-24T13:12:01.000Z
 excerpt: "Yesterday, unc0ver got bumped to version 3.7.0, adding support to A12 devices on iOS 12.4. You're interested, so you want to try it on your iPhone XS Max, but you don't know where to start. I've got you covered! In this post, we'll take a look at the basics of jailbreaking."
-header_image: "/content/images/2019/10/Schermata-2019-10-03-alle-20.46.19.png"
+header_image: "/assets/images/2019/10/Schermata-2019-10-03-alle-20.46.19.png"
 tags: 
  - "Tutorial"
  - "Jailbreak"
