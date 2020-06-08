@@ -10,7 +10,7 @@
 
 <!-- Twitter Cards -->
 <meta name="twitter:site" content="{{ site.title }}">
-<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{{ site.separator}}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt}}{% elsif site.description %}{{site.description}}{% else %}{{ site.title }}{% endif %}">
 {% if page.header_image %}
     <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +21,7 @@
 
 <!-- [F]acebook OpenGraph -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{ page.title }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{{ site.separator}}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:url" content="{{ page.url }}">
 <meta property="article:author" content="Samplasion">
@@ -37,7 +37,7 @@
     {
       "@context": "http://schema.org/",
       "@type": "NewsArticle",
-      "headline": "{{ page.title }}",
+      "headline": "{% if page.title %}{{ page.title }}{{ site.separator}}{{ site.title }}{% else %}{{ site.title }}{% endif %}",
       "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
       "description": "{% if page.excerpt %}{{page.excerpt}}{% elsif site.description %}{{site.description}}{% else %}{{ site.title }}{% endif %}",
 {% if page.header_image %}
