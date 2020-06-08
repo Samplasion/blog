@@ -34,7 +34,10 @@
 
 		&:hover {
 			text-shadow: #030303 0rem 0.3rem 0.5rem;
-			@media screen and (prefers-color-scheme: dark) {
+		}
+
+		@media screen and (prefers-color-scheme: dark) {
+			&:hover {
 				text-shadow: #999999 0rem 0.3rem 0.5rem;
 			}
 		}
@@ -48,4 +51,10 @@ div.post img {
 blockquote {
     border-left: 2px solid $primary;
 	padding-left: .75em;
+}
+
+@media  (prefers-color-scheme: dark){
+	img.image-404 {
+		filter: invert(85%);
+	}
 }
