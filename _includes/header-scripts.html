@@ -31,3 +31,32 @@
 {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
 {% endif %}
+
+<!-- Schema.org Data -->
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "NewsArticle",
+      "headline": "{{ page.title }}",
+      "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+      "description": "{% if page.excerpt %}{{page.excerpt}}{% elsif site.description %}{{site.description}}{% else %}{{ site.title }}{% endif %}",
+{% if page.header_image %}
+      "image": {
+        "@type": "ImageObject",
+        "height": "200",
+        "width": "100",
+        "url": "{{ page.header_image }}"
+      },
+{% endif %}
+      "author": "Samplasion",
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://samplasion.js.org/favicon.png"
+        },
+        "name": "Samplasion"
+      },
+      "articleBody": "{{ page.content }}"
+    }
+</script>
