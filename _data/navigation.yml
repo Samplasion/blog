@@ -3,3 +3,5 @@ primary:
     url: https://samplasion.js.org
   - title: Blog
     url: /
+  - title: Search
+    url: /search
