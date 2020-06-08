@@ -2,4 +2,4 @@ primary:
   - title: Home
     url: https://samplasion.js.org
   - title: Blog
-    url: /blog # Will be changed to https://blog.samplasion.js.org
+    url: /

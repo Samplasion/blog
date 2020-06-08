@@ -5,7 +5,7 @@ title: "Samplasion"
 separator: " - "
 
 # The base url for the repo
-baseurl: /blog
+baseurl: /
 
 # SASS compiler
 sass:
