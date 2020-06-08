@@ -1,5 +1,11 @@
 //< assets/css/main.css
 
-article.post p {
-    margin: .75rem 0 !important;
+article.post {
+    @media (min-width: 768px) {
+        margin: 0 7.5%;
+    }
+
+    & p {
+        margin: .75rem 0 !important;
+    }
 }
