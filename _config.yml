@@ -1,8 +1,14 @@
 # The site title
 title: "Samplasion's Blog"
 
+# The site description
+description: "My blog with guides, how-tos and personal accomplishments."
+
 # Title separator (eg. " - ", outputs in "Page title - Site title")
 separator: " - "
+
+# Blog URL
+url: https://blog.samplasion.js.org
 
 # The base url for the repo
 baseurl: /
@@ -27,6 +33,7 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-coffeescript
+  - jekyll-sitemap
 
 # Pagination
 paginate: 10
