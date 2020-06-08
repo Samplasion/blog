@@ -34,6 +34,9 @@
 
 		&:hover {
 			text-shadow: #030303 0rem 0.3rem 0.5rem;
+			@media screen and (prefers-color-scheme: dark) {
+				text-shadow: #999999 0rem 0.3rem 0.5rem;
+			}
 		}
 	}
 }
@@ -43,6 +46,6 @@ div.post img {
 }
 
 blockquote {
-    border-left: 2px solid #c44040;
+    border-left: 2px solid $primary;
 	padding-left: .75em;
 }
