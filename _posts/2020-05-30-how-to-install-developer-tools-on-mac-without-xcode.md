@@ -24,10 +24,8 @@ xcode-select --install
 xcode-select: note: install requested for command line tools
 {% endhighlight %}
 
-{% capture code %}
-xcode-select --install
-xcode-select: note: install requested for command line tools
-{% endcapture %}
+{% capture code %}xcode-select --install  
+xcode-select: note: install requested for command line tools{% endcapture %}
 {% include highlight.html lang="bash" code=code host="Users-Mac" output="2" %}
 
 A new window should appear. Click on the **Install** button and wait for it to finish installing.
