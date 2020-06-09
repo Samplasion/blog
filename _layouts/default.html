@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <div class="container is-fluid">
+    <div class="{% unless page.body_class %}container is-fluid{% else %}{{ page.body_class }}{% endunless %}">
         {{ content }}
     </div>
 
