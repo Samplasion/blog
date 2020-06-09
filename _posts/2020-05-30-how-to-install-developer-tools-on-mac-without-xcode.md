@@ -20,8 +20,8 @@ What are developer tools? Developer tools are a collection of commands (more tha
 To install them, run:
 
 {% highlight bash %}
-    xcode-select --install
-    xcode-select: note: install requested for command line tools
+xcode-select --install
+xcode-select: note: install requested for command line tools
 {% endhighlight %}
 
 A new window should appear. Click on the **Install** button and wait for it to finish installing.
@@ -29,8 +29,8 @@ A new window should appear. Click on the **Install** button and wait for it to f
 Now, when you run that command again, you'll get this:
 
 {% highlight bash %}
-    xcode-select --install
-    xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+xcode-select --install
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 {% endhighlight %}
 
 That means they were successfully installed.
