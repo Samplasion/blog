@@ -19,7 +19,6 @@ sections:
 - type: document
   path: _data/navigation.yml
   label: Menus
-  match: "**/*"
 upload_dir: assets/uploaded
 public_path: "/assets/uploaded"
 front_matter_path: ''
