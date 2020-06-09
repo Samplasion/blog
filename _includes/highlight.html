@@ -1,10 +1,10 @@
 <!-- &#123;% include highlight.html lang="" code=code host="XXX" output="" %} -->
 
 <pre 
-    class="{% if host and output %}command-line {% endif %}language-{{lang}}"
-    {% if host %}data-host="{{ host }}"{% endif %}
-    {% if output %}data-output="{{ output }}"{% endif %}>
-        <code class="language-{{lang}}">
-            {{code}}
+    class="{% if include.host and include.output %}command-line {% endif %}language-{{include.lang}}"
+    {% if include.host %}data-host="{{ include.host }}"{% endif %}
+    {% if include.output %}data-output="{{ include.output }}"{% endif %}>
+        <code class="language-{{ include.lang }}">
+            {{ include.code }}
         </code>
 </pre>
