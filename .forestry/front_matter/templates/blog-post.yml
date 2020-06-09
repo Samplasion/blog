@@ -23,3 +23,5 @@ fields:
 - type: textarea
   name: image
   label: Header image
+pages:
+- _posts/build-jekyll-with-custom-plugins-on-github-pages.md
