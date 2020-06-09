@@ -36,12 +36,18 @@ defaults:
 
 # Additional plugins
 plugins: 
+  - jekyll-archives
+  - jekyll-feed
   - jekyll-paginate
   - jemoji
 #  - jekyll-coffeescript
 #  - jekyll-sitemap
   - jekyll-cloudcannon-schedule
   - jekyll-seo-tag
+  - jekyll-mentions
+
+jekyll-mentions:
+  base_url: https://twitter.com
 
 # Pagination
 paginate: 10
