@@ -13,7 +13,28 @@ tags:
  - "Tutorial"
 ---
 
-<p>I've mentioned it multiple times in previous posts, but I feel like writing this post so I can just link to it when needed.</p><p>What are developer tools? Developer tools are a collection of commands (more than 50) that are commonly used by developers, such as <code>git</code>, <code>svn</code>, <code>perl</code> and other similar commands.</p><p>To install them, run:</p><!--kg-card-begin: html--><pre class="command-line language-bash" data-host="UsersMac" data-output="2"><code class=" language-bash">xcode-select --install
-xcode-select: note: install requested for command line tools</code></pre><!--kg-card-end: html--><p>A new window should appear. Click on the <strong>Install</strong> button and wait for it to finish installing.</p><p>Now, when you run that command again, you'll get this:</p><!--kg-card-begin: html--><pre class="command-line language-bash" data-host="UsersMac" data-output="2"><code class=" language-bash">xcode-select --install
-xcode-select: error: command line tools are already installed, use "Software Update" to install updates</code></pre><!--kg-card-end: html--><!--kg-card-begin: html--><p>That means they were successfully installed.</p>
-<p>That's really it! If you were following a guide, <a href="javascript:window.go(-1)">click here to go back</a>.<!--kg-card-end: html--><p>Tell me what you think in the comments, and as always, stay safe!</p>
+I've mentioned it multiple times in previous posts, but I feel like writing this post so I can just link to it when needed.
+
+What are developer tools? Developer tools are a collection of commands (more than 50) that are commonly used by developers, such as `git`, `svn`, `perl` and other similar commands.
+
+To install them, run:
+
+{% highlight bash %}
+    xcode-select --install
+    xcode-select: note: install requested for command line tools
+{% endhighlight %}
+
+A new window should appear. Click on the **Install** button and wait for it to finish installing.
+
+Now, when you run that command again, you'll get this:
+
+{% highlight bash %}
+    xcode-select --install
+    xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+{% endhighlight %}
+
+That means they were successfully installed.
+
+That's really it! If you were following a guide, [click here to go back](javascript:window.go(-1)).
+
+Tell me what you think in the comments, and as always, stay safe!
