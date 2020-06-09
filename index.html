@@ -2,11 +2,9 @@
 layout: archive
 arc_title: Welcome!
 arc_subtitle: This is my blog. Find an article that you like or just explore!
-body_class: 'container px-6'
+body_class: container px-6
+
 ---
-
-<!-- {{ site.sass.sass_dir | relative_url }} -->
-
 {% for post in paginator.posts %}
   {% include post-panel.html post=post %}
 {% endfor %}
