@@ -1,0 +1,10 @@
+<!-- {% include highlight.html lang="" code=code host="XXX" output="" %} -->
+
+<pre 
+    class="{% if host and output %}command-line {% endif %}language-{{lang}}"
+    {% if host %}data-host="{{ host }}"{% endif %}
+    {% if output %}data-output="{{ output }}"{% endif %}>
+        <code class="language-{{lang}}">
+            {{code}}
+        </code>
+</pre>
