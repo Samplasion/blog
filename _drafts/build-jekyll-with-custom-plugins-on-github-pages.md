@@ -8,6 +8,6 @@ tags:
 - Free host
 - GitHub
 - Jekyll
-image: ''
+image: "/assets/uploaded/schermata-2020-06-09-alle-23-32-08.png"
 
 ---
