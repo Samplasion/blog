@@ -3,8 +3,4 @@
 <pre 
     class="{% if include.host and include.output %}command-line {% endif %}language-{{include.lang}}"
     {% if include.host %}data-host="{{ include.host }}"{% endif %}
-    {% if include.output %}data-output="{{ include.output }}"{% endif %}>
-        <code class="language-{{ include.lang }}">
-            {{ include.code }}
-        </code>
-</pre>
+    {% if include.output %}data-output="{{ include.output }}"{% endif %}><code class="language-{{ include.lang }}">{{ include.code }}</code></pre>
