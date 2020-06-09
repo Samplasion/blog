@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if page.arc_title and page.arc_subtitle %}
+{% if page.arc_title and page.arc_subtitle and paginator and !paginator.next_page %}
 <h1 class="title">{{ page.arc_title }}</h1>
 <p class="subtitle">{{ page.arc_subtitle }}</p>
 {% endif %}
