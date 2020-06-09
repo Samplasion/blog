@@ -9,10 +9,32 @@ socials: true
 
 <form action="https://getform.io/f/dc8cd2bb-fd03-4543-90b2-a9054f92e078" method="POST">
 
-  <input type="text" name="name">
-  <input type="email" name="email">
-  <input type="text" name="message">
-  <button type="submit">Send</button>
+    <input type="text" name="name" placeholder="">
+    <div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left">
+        <input class="input" type="text" placeholder="Name" name=name>
+            <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+            </span>
+        </div>
+    </div>
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left">
+            <input class="input" type="email" placeholder="Email" name=email>
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+        </div>
+    </div>
+    <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+            <textarea name="message" placeholder="I think..."></textarea>
+        </div>
+    </div>
+    <button type="submit">Send</button>
 
 </form>
         
