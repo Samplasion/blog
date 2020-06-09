@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: slug
   label: slug
@@ -14,9 +14,11 @@ fields:
 - type: text
   name: excerpt
   label: excerpt
-- type: textarea
-  name: image
-  label: image
 - type: list
   name: tags
   label: tags
+  config:
+    use_select: false
+- type: textarea
+  name: image
+  label: Header image
