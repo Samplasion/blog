@@ -5,36 +5,14 @@ layout: default
 socials: true
 ---
 
-<h1 class="title is-1">Search</h1>
-<div class="field">
-    <div class="control">
-        <input type="text" id="search-input" placeholder="Search posts..." />
-    </div>
-    <p class="help">The results will be shown below.</p>
-</div>
-<div class="columns is-multiline" id="results-container"></div>
+<h1 class="title is-1">Contact</h1>
 
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
-<script>
-    var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/posts.json',
-        searchResultTemplate: `
-<div class="post column is-half">
-    <article class="panel is-primary">
-        <p class="panel-heading">
-            <a href="{url}">{title}</a>
-        </p>
-        <div class="panel-block is-active entry-content">
-            <span>{excerpt}&nbsp;&mdash;&nbsp;<a href="{url}">Read&nbsp;more&nbsp;&raquo;</a></span>
-        </div>
-        <div class="panel-block is-active content entry-footer">
-            <small>Tagged: {tags}
-            </small>
-        </div>
-    </article>
-</div>
-        `
-    })
-</script>
+<form action="https://getform.io/f/dc8cd2bb-fd03-4543-90b2-a9054f92e078" method="POST">
+
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <input type="text" name="message">
+  <button type="submit">Send</button>
+
+</form>
+        
