@@ -1,17 +1,12 @@
 ---
-title: "Google forced to show Search Engine selection screen"
-date: 2020-06-16T08:00:00.000Z
-header_image: https://unsplash.com/photos/jz4ca36oJ_M/download?force=true
+title: Google forced to show Search Engine selection screen
+date: 2020-06-16 08:00:00
+header_image: >-
+  https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb
 tags:
- - Google
- - DuckDuckGo
- - Internet
- - Search Engine
 ---
 
-Google finalized the choice screen. Don't know what I'm talking about? From this summer, you'll
-be presented with a search engine choice screen.
-
+Google finalized the choice screen. Don't know what I'm talking about? From this summer, you'll be presented with a search engine choice screen.
 <!--more-->
 
 It's a simple screen. Four icons: Google, and three others (probably Google will be preselected). The other engines will vary from nation to nation.
@@ -26,17 +21,17 @@ Google's solution is an auction. Yeah, an auction. To even get a chance to appea
 
 According to DuckDuckGo's CEO and Founder, Gabriel Weinberg, "you're incentivized to win your profit".
 
-> Google is taking away all the profit of these search engines and profiting from it themselves. \[...] They're effectively running other people's search and taking other people's profit.
+> Google is taking away all the profit of these search engines and profiting from it themselves. \[…\] They're effectively running other people's search and taking other people's profit.
 
 And that's basically what's going on here. Google's using the excuse of the auction to still earn from searches, even if the engine is not its own.
 
-Ecosia, to cite one, decided to boycott the auction. Its CEO, Christian Kroll, says he doesn't think his engine will win because most of the profit is spent planting trees. 
+Ecosia, to cite one, decided to boycott the auction. Its CEO, Christian Kroll, says he doesn't think his engine will win because most of the profit is spent planting trees.
 
 DuckDuckGo, on the other hand, argues the process is flawed. They say - and I think it's the best option - the choice screen should contain far more than only 4 options - and I add that the list should be presented in **alphabetical** order, with **no preselection**.
 
 Paul Gennai, a product management director at Google, says that Android has “created more choice for everyone, not less” and that the operating system's openness has meant “developers of apps that compete against Google have precisely the same ability to reach users”.
 
-He says Android openness has taken "billions of dollars of investment over more than ten years", resulting in "an auction \[system] to ensure that it would continue to be viable for Google to continue its investments in the open Android ecosystem".
+He says Android openness has taken "billions of dollars of investment over more than ten years", resulting in "an auction \[system\] to ensure that it would continue to be viable for Google to continue its investments in the open Android ecosystem".
 
 All this stuff aside, some wonder if it's even going to make a difference at all.
 
@@ -44,6 +39,6 @@ Microsoft did [something similar](https://en.wikipedia.org/wiki/BrowserChoice.eu
 
 In its own tests, DuckDuckGo created a choice screen with 18 different options and found that people still scrolled all the way to the bottom to find the one they were most familiar with.
 
-Anyway... it seems like Google has found its own method of lawfully doing what it wants.
+Anyway… it seems like Google has found its own method of lawfully doing what it wants.
 
-It's all from today's post; see you next time. Happy searching!
+It's all from today's post; see you next time. Happy searching\!
