@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% capture title_date %}
+{% case page.type %}
+    {% when 'year' %}
+        {{ page.date | date: "%y" }}
+    {% when 'month' %}
+        {{ page.date | date: "%B %y" }}
+    {% when 'day' %}
+        {{ page.date | date: "%d %B %y" }}
+{% endcase %}
+{% endcapture %}
+
+<h1 class="title">{{ page.title }}{{ title_date }}</h1>
+{% endif %}
+
+{% for post in page.posts %}
+  {% include post-panel.html post=post %}
+{% endfor %}

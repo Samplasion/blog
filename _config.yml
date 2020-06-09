@@ -49,6 +49,13 @@ plugins:
 jekyll-mentions:
   base_url: https://twitter.com
 
+jekyll-archives:
+  enabled:
+    - tag
+    - year
+    - month
+  layout: archive_b
+
 # Pagination
 paginate: 10
 paginate_path: "/page/:num/"
