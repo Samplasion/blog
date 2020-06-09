@@ -40,6 +40,7 @@ plugins:
 #  - jemoji
 #  - jekyll-coffeescript
 #  - jekyll-sitemap
+  - jekyll-cloudcannon-schedule
 
 # Pagination
 paginate: 10
