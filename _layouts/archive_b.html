@@ -14,8 +14,9 @@ layout: default
 {% endcapture %}
 
 <h1 class="title">{{ page.title }}{{ title_date }}</h1>
-{% endif %}
 
-{% for post in page.posts %}
-  {% include post-panel.html post=post %}
-{% endfor %}
+<div class="columns is-multiline">
+    {% for post in page.posts %}
+        {% include post-panel.html post=post %}
+    {% endfor %}
+</div>
