@@ -18,7 +18,7 @@
 
 <meta name="author" content="{{ site.author.name }}">
 
-{% if page.socials %}
+{%- comment -%}if page.socials -%}
   <!-- Twitter Cards -->
   <meta name="twitter:site" content="{{ site.title }}">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
@@ -75,7 +75,7 @@
         "articleBody": "{{ page.content }}"
       }
   </script>
-{% endif %}
+{% endif %}{%- endcomment -%}
 
 {% seo %}
 
