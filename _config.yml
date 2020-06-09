@@ -37,10 +37,11 @@ defaults:
 # Additional plugins
 plugins: 
   - jekyll-paginate
-#  - jemoji
+  - jemoji
 #  - jekyll-coffeescript
 #  - jekyll-sitemap
   - jekyll-cloudcannon-schedule
+  - jekyll-seo-tag
 
 # Pagination
 paginate: 10
