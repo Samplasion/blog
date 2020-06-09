@@ -36,8 +36,8 @@ defaults:
 # Additional plugins
 plugins: 
   - jekyll-paginate
-  - jemoji
-  - jekyll-coffeescript
+#  - jemoji
+#  - jekyll-coffeescript
   - jekyll-sitemap
 
 # Pagination
