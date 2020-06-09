@@ -11,7 +11,7 @@ separator: " - "
 url: https://blog.samplasion.js.org
 
 # The base url for the repo
-baseurl: /
+baseurl: ""
 
 # SASS compiler
 sass:
