@@ -4,7 +4,7 @@ slug: how-to-save-shsh2-blobs
 comment_id: 5dbaf2c158602e007d19fdf0
 date: 2019-11-26T17:45:00.000Z
 excerpt: "On iDevices, blobs are essential for a successful downgrade. However, a new or inexperienced user might find trouble finding the right tools to save them."
-header_image: "https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
+image: "https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 tags: 
  - "Apple"
  - "Jailbreak"

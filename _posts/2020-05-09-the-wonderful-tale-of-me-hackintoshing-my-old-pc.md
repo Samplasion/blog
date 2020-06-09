@@ -4,7 +4,7 @@ slug: the-wonderful-tale-of-me-hackintoshing-my-old-pc
 comment_id: 5eb3d17d22bc05030cb76cbe
 date: 2020-05-09T08:00:00.000Z
 excerpt: "At first, there was just a MacBook Pro. It was fine, but the owner, geeky as he was, felt as if he needed another PC.Yeah that's me, and I succeeded."
-header_image: "/assets/images/2020/05/P1030720.JPG"
+image: "/assets/images/2020/05/P1030720.JPG"
 tags: 
  - "Apple"
  - "Mac"

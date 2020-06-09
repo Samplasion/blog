@@ -2,7 +2,7 @@
 title: "Samplasion's Blog"
 
 # The site description
-description: "My blog with guides, how-tos and personal accomplishments."
+tagline: "My blog with guides, how-tos and personal accomplishments."
 
 # Title separator (eg. " - ", outputs in "Page title - Site title")
 separator: " - "
@@ -27,7 +27,7 @@ defaults:
     values:
       layout: "post"
       comments: true
-      header_image: https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+      image: https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
   -
     scope:
       path: ""
@@ -49,10 +49,18 @@ paginate_path: "/page/:num/"
 # Author
 author:
   url: https://samplasion.js.org
+  twitter: Samplasion
   name: Samplasion
+
+social:
+  name: Ben Balter
   links:
-    - title: Twitter
-      url: https://twitter.com/Samplasion
+    - https://twitter.com/Samplasion
+    - https://github.com/Samplasion
+
+twitter:
+  username: Samplasion
+  card: summary
 
 # Hide scheduled posts
 future: false
@@ -71,3 +79,6 @@ tags:
   - Linux
 
 favicon: /assets/images/favicon/apple-touch-icon.png
+
+# Language
+lang: en_US

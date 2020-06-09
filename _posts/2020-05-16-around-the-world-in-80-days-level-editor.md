@@ -4,7 +4,7 @@ slug: around-the-world-in-80-days-level-editor
 comment_id: 5eb5424f313c86007b9533d7
 date: 2020-05-16T08:00:00.000Z
 excerpt: "This level editor is made using pure HTML, JS and CSS. Nothing else. This also means that the site will also work offline."
-header_image: "/assets/images/2020/05/Schermata-2020-05-08-alle-13.20.46.png"
+image: "/assets/images/2020/05/Schermata-2020-05-08-alle-13.20.46.png"
 tags: 
  - "Games"
  - "Tools"

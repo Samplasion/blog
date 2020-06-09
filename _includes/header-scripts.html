@@ -14,68 +14,72 @@
 </script>
 
 <!-- Meta tags -->
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.tagline }}{% endif %}">
 
 <meta name="author" content="{{ site.author.name }}">
 
-{% if page.socials %}
-<!-- Twitter Cards -->
-<meta name="twitter:site" content="{{ site.title }}">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt}}{% elsif site.description %}{{site.description}}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:card" content="summary_large_image">
-{% if page.header_image %}
-    <meta name="twitter:image" content="{{ page.header_image }}">
-{% else %}
-    <meta name="twitter:image" content="{{ site.favicon }}">
-{% endif %}
+{%- comment -%}
+  {% if page.socials %}
+  <!-- Twitter Cards -->
+  <meta name="twitter:site" content="{{ site.title }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt}}{% elsif site.tagline %}{{site.tagline}}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% if page.image %}
+      <meta name="twitter:image" content="{{ page.image }}">
+  {% else %}
+      <meta name="twitter:image" content="{{ site.favicon }}">
+  {% endif %}
 
-<!-- [F]acebook OpenGraph -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:url" content="{{ page.url }}">
-<meta property="article:author" content="{{ site.author.name }}">
-{% if page.header_image %}
-    <meta property="og:image" content="{{ page.header_image }}">
-{% else %}
-    <meta property="og:image" content="{{ site.favicon }}">
-{% endif %}
-{% if page.date %}
-    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
-{% endif %}
+  <!-- [F]acebook OpenGraph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:url" content="{{ page.url }}">
+  <meta property="article:author" content="{{ site.author.name }}">
+  {% if page.image %}
+      <meta property="og:image" content="{{ page.image }}">
+  {% else %}
+      <meta property="og:image" content="{{ site.favicon }}">
+  {% endif %}
+  {% if page.date %}
+      <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+  {% endif %}
 
-<!-- Schema.org Data -->
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "NewsArticle",
-      "headline": "{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}",
-{% if page.date %}
-      "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
-{% endif %}
-      "description": "{% if page.excerpt %}{{page.excerpt}}{% elsif site.description %}{{site.description}}{% else %}{{ site.title }}{% endif %}",
-{% if page.header_image %}
-      "image": {
-        "@type": "ImageObject",
-        "height": "200",
-        "width": "100",
-        "url": "{{ page.header_image }}"
-      },
-{% endif %}
-      "author": "Samplasion",
-      "publisher": {
-        "@type": "Organization",
-        "logo": {
+  <!-- Schema.org Data -->
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "NewsArticle",
+        "headline": "{% if page.title %}{{ page.title }}{{ site.separator }}{{ site.title }}{% else %}{{ site.title }}{% endif %}",
+  {% if page.date %}
+        "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+  {% endif %}
+        "description": "{% if page.excerpt %}{{page.excerpt}}{% elsif site.tagline %}{{site.tagline}}{% else %}{{ site.title }}{% endif %}",
+  {% if page.image %}
+        "image": {
           "@type": "ImageObject",
-          "url": "https://samplasion.js.org/favicon.png"
+          "height": "200",
+          "width": "100",
+          "url": "{{ page.image }}"
         },
-        "name": "Samplasion"
-      },
-      "articleBody": "{{ page.content }}"
-    }
-</script>
-{% endif %}
+  {% endif %}
+        "author": "Samplasion",
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://samplasion.js.org/favicon.png"
+          },
+          "name": "Samplasion"
+        },
+        "articleBody": "{{ page.content }}"
+      }
+  </script>
+  {% endif %}
+{%- endcomment -%}
+
+{% seo %}
 
 <!-- Link Tags -->
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

@@ -1,7 +1,7 @@
 ---
 title: Google forced to show Search Engine selection screen
 date: 2020-06-16 08:00:00
-header_image: >-
+image: >-
   https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb
 tags:
 ---
