@@ -11,11 +11,11 @@ sections:
   label: Posts
   create: all
 - type: directory
-  path: " "
+  path: ''
   label: Files
   create: all
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
 upload_dir: assets/uploaded
 public_path: "/assets/uploaded"
 front_matter_path: ''
