@@ -1,6 +1,12 @@
 <!-- &#123;% include highlight.html lang="" code=code host="XXX" output="" %} -->
 
 <pre 
-    class="{% if include.host and include.output %}command-line {% endif %}language-{{include.lang}}"
+    class="{% if include.host and include.output %}command-line {% endif %}{% unless include.noMatchBraces %} match-braces {% endunless %}{% if include.noWhitespaceNormalization%} no-whitespace-normalization {% endif %}language-{{include.lang}}"
+
     {% if include.host %}data-host="{{ include.host }}"{% endif %}
-    {% if include.output %}data-output="{{ include.output }}"{% endif %}><code class="language-{{ include.lang }}">{{ include.code }}</code></pre>
+    {% if include.output %}data-output="{{ include.output }}"{% endif %}
+    {% if include.filterOutput %}data-filter-output="{{ include.filterOutput }}"{% endif %}
+    {% if include.prompt %}data-prompt="{{ include.prompt }}"{% endif %}
+
+    {% if include.previewers %}data-previewers="{{ include.previewers }}"{% endif %}
+><code class="language-{{ include.lang }}">{{ include.code }}</code></pre>
