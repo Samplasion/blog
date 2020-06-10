@@ -35,4 +35,8 @@ You can generate Front Matter templates to use in pages and/or posts in the appr
 
 In the _Media_ section, you can add images and videos that will be uploaded to a custom location that's chosen in the setup. My custom location is `/assets/uploads`, to differentiate uploads from Forestry vs. theme assets.
 
-The _Menus_ section only work if you have the `jekyll-menus` plugin (which I do).
+The _Menus_ section only work if you have the `jekyll-menus` plugin (which I do), which can be disappointing if you already have a custom menu system or if you're on GitHub pages (but **there's a workaraund** which I'm gonna explain in the next post).
+
+Ultimately, this can be great if you're used to Ghost, Wordpress and other CMS with a graphical editor, and its moderate flexibility allows for in-depth content management.
+
+See you next time. Happy blogging!
