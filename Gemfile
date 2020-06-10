@@ -10,4 +10,5 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'jekyll-cloudcannon-schedule'
     gem 'jekyll-seo-tag'
+    gem "jekyll-menus"
 end

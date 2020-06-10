@@ -45,6 +45,7 @@ plugins:
   - jekyll-cloudcannon-schedule
   - jekyll-seo-tag
   - jekyll-mentions
+  - jekyll-menus
 
 jekyll-mentions:
   base_url: https://twitter.com
