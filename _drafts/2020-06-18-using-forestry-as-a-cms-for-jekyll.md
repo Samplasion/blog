@@ -31,4 +31,4 @@ The interface sports a simple, customizable sidebar, so you can access your data
 
 You can generate Front Matter templates to use in pages and/or posts in the appripriately named _Front matter_ section. In it, you can add endless templates, so that, when you create a post, you can switch templates to choose the one that most adapts to what you need.
 
-In the _Media_ sectio, you can add images and videos that will be uploaded to a custom location that's chosen in the setup. My custom location is `/assets/uploads`, to differentiate uploads from Forestry vs. theme assets.
+In the _Media_ section, you can add images and videos that will be uploaded to a custom location that's chosen in the setup. My custom location is `/assets/uploads`, to differentiate uploads from Forestry vs. theme assets.
