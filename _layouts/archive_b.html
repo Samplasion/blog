@@ -5,15 +5,16 @@ layout: default
 {% capture title_date %}
 {% case page.type %}
     {% when 'year' %}
-        {{ page.date | date: "%y" }}
+        {{ page.date | date: "%Y" }}
     {% when 'month' %}
-        {{ page.date | date: "%B %y" }}
+        {{ page.date | date: "%B %Y" }}
     {% when 'day' %}
-        {{ page.date | date: "%d %B %y" }}
+        {{ page.date | date: "%d %B %Y" }}
 {% endcase %}
 {% endcapture %}
 
 <h1 class="title">{{ page.title }}{{ title_date }}</h1>
+<p class="subtitle">All posts {% if page.type == "tag" %}tagged "{{ page.title }}"{% else %}from {{ title_date }}{% endif %}</p>
 
 <div class="columns is-multiline">
     {% for post in page.posts %}
