@@ -13,11 +13,6 @@ sections:
   label: Pages
   create: all
 - type: heading
-  label: Data
-- type: document
-  path: _data/navigation.yml
-  label: Menus
-- type: heading
   label: Raw
 - type: directory
   path: ''
