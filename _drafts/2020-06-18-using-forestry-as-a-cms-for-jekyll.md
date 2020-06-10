@@ -15,9 +15,9 @@ tags:
 ---
 Jekyll sure is a wonderful system for quick static sites or personal projects, but I think we can all agree that adding posts is a bit hard for the non-programmers. **No more.**
 
-[Forestry.io](https://forestry.io) is a free service with paid upgrades that poses itself as the solver of this problem. With it, you can easily manage your pages and posts, with a visually appealing interface and a WYSIWYG[^1] editor. Don't like it? No problem. Click the menu in the upper right corner and select "Raw Editor".
+[Forestry.io](https://forestry.io) is a free service with paid upgrades that poses itself as the solver of this problem. With it, you can easily manage your pages and posts, with a visually appealing interface and a WYSIWYG\[^1\] editor. Don't like it? No problem. Click the menu in the upper right corner and select "Raw Editor".
 
-[^1]: What You See Is What You Get is a type of editor that shows styles as they would appear on a page, rather than showing markup tags.
+\[^1\]: What You See Is What You Get is a type of editor that shows styles as they would appear on a page, rather than showing markup tags.
 
 What’s even juicier is that you can edit and add posts from mobile without a hassle.
 
@@ -32,3 +32,4 @@ The interface sports a simple, customizable sidebar, so you can access your data
 You can generate Front Matter templates to use in pages and/or posts in the appripriately named _Front matter_ section. In it, you can add endless templates, so that, when you create a post, you can switch templates to choose the one that most adapts to what you need.
 
 In the _Media_ section, you can add images and videos that will be uploaded to a custom location that's chosen in the setup. My custom location is `/assets/uploads`, to differentiate uploads from Forestry vs. theme assets.
+
