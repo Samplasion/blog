@@ -5,7 +5,10 @@
         </p>
         <header class="panel-block is-active" style="flex-direction: column;">
             <div class="subtitle is-6">
-                Posted on {{ post.date | date_to_long_string }}
+                {%- comment -%}Posted on {{ post.date | date_to_long_string }}{%- endcomment -%}
+                <div class="tooltip">Posted {{ post.date | timeago }}
+                    <span class="tooltiptext">{{ post.date | date_to_long_string }}</span>
+                </div>
             </div><!-- .entry-meta -->
         </header><!-- .entry-header -->
         {% if post.image %}

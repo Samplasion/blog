@@ -40,12 +40,13 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jemoji
-#  - jekyll-coffeescript
-#  - jekyll-sitemap
+  - jekyll-coffeescript
+  - jekyll-sitemap
   - jekyll-cloudcannon-schedule
   - jekyll-seo-tag
   - jekyll-mentions
   - jekyll-menus
+  - jekyll-timeago
 
 jekyll-mentions:
   base_url: https://twitter.com

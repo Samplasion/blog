@@ -10,5 +10,8 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'jekyll-cloudcannon-schedule'
     gem 'jekyll-seo-tag'
-    gem "jekyll-menus"
+    gem 'jekyll-menus'
+    gem 'jekyll-timeago'
+    gem 'jekyll-sitemap'
+    gem 'jekyll-coffeescript'
 end
