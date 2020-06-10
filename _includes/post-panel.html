@@ -6,9 +6,9 @@
         <header class="panel-block is-active" style="flex-direction: column;">
             <div class="subtitle is-6">
                 {%- comment -%}Posted on {{ post.date | date_to_long_string }}{%- endcomment -%}
-                <div class="tooltip">Posted {{ post.date | timeago }}
+                Posted <span class="tooltip">{{ post.date | timeago }}
                     <span class="tooltiptext">{{ post.date | date_to_long_string }}</span>
-                </div>
+                </span>
             </div><!-- .entry-meta -->
         </header><!-- .entry-header -->
         {% if post.image %}
