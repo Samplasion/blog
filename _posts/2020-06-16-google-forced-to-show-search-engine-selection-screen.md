@@ -15,6 +15,8 @@ Why was this done, you may ask? Because the European Commission fined Google for
 
 Instead, now a menu will let you make your choice and download the respective app of the search engine you prefer.
 
+{% include inarticle.html %}
+
 This is a big step forward, but there's still a catch. Thought Google would let other search engines roam free in its Operating System? Think again.
 
 Google's solution is an auction. Yeah, an auction. To even get a chance to appear alongside Google, search engines have to play in what's basically a pay-to-play tournament, where only the 3 highest bidders enter the choice screen.
@@ -25,7 +27,9 @@ According to DuckDuckGo's CEO and Founder, Gabriel Weinberg, "you're incentivize
 
 And that's basically what's going on here. Google's using the excuse of the auction to still earn from searches, even if the engine is not its own.
 
-Ecosia, to cite one, decided to boycott the auction. Its CEO, Christian Kroll, says he doesn't think his engine will win because most of the profit is spent planting trees.
+{% include inarticle.html %}
+
+Ecosia's CEO, Christian Kroll, says he doesn't think his engine will win because most of the profit is spent planting trees.
 
 DuckDuckGo, on the other hand, argues the process is flawed. They say - and I think it's the best option - the choice screen should contain far more than only 4 options - and I add that the list should be presented in **alphabetical** order, with **no preselection**.
 
