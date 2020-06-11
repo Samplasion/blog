@@ -47,6 +47,7 @@ plugins:
   - jekyll-mentions
   - jekyll-menus
   - jekyll-timeago
+  - jekyll-responsive-image
 
 jekyll-mentions:
   base_url: https://twitter.com
@@ -98,3 +99,7 @@ favicon: /assets/images/favicon/apple-touch-icon.png
 
 # Language
 lang: en_US
+
+# Responsive images
+responsive_image:
+  template: _includes/image-srcset.html
