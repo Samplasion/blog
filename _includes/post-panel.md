@@ -15,18 +15,9 @@
             <div class="card-image panel-block is-active" style="padding:0;margin:0;">
                 <figure class="image is-16by9" style="height: 100%;width: 100%;">
                     {% if post.image contains "://" %}
-                    {%- responsive_image_block -%}
-    path: {{ post.image | relative_url }}
-    alt: {{ post.title }}
-    title: {{ post.title }}
-                    {%- endresponsive_image_block -%}
+                        ![{{ post.title }}]({{ post.image }} "{{ post.title }}")
                     {% else %}
-                    {%- responsive_image_block -%}
-    path: {{ post.image | relative_url }}
-    alt: {{ post.title }}
-    title: {{ post.title }}
-                    {%- endresponsive_image_block -%}
-                        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" />
+                        ![{{ post.title }}]({{ post.image }} "{{ post.title }}")
                     {% endif %}
                 </figure>
             </div>
