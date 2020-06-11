@@ -24,5 +24,5 @@ fields:
   name: image
   label: Header image
 pages:
-- _posts/build-jekyll-with-custom-plugins-on-github-pages.md
+- _posts/2020-06-23-build-jekyll-with-custom-plugins-on-github-pages.md
 - _posts/build-jekyll-with-custom-plugins-on-github-pages.md
