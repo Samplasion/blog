@@ -15,6 +15,7 @@
 {% else %}
 <img src="{{ post.image }}" alt="{{ post.title }}" />
 {% endif %}
+{% endif %}
 {% endcapture %}
 
 <div class="post column is-half">
