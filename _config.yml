@@ -106,3 +106,10 @@ plugins_dir: ./_plugins
 # Responsive images
 responsive_image:
   template: _includes/image-srcset.html
+  sizes:
+    - width: 240
+    - width: 480
+    - width: 640
+    - width: 1280
+    - width: 2560
+  output_path_format: assets/resized/%{width}/%{basename}
