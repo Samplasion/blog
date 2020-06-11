@@ -38,11 +38,11 @@ if (file) {
     var excerpt = fm.data.excerpt || fm.content.split("<!--more-->")[0].trim();
 
     var tweet = `
-New post on Samplasion's Blog: ${title}
+Hey there! I've published a new post: "${title}". Check it out!
 https://blog.samplasion.js.org/${slug}
     `;
 
-    console.log(`Tweeting:\n${tweet}`);
+    console.log(`Tweeting:\n${tweet}\n`);
 
     client.post('statuses/update', {status: tweet},  function(error, tweet, response) {
         if(error) throw error;
