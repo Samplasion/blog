@@ -90,7 +90,11 @@ That's because we've only triggered a rebuild. But there's a difference in that 
 
 If you think this is a clever workaround that GitHub will patch, think again: [the official Jekyll blog posted a similar method](https://jekyllrb.com/docs/continuous-integration/github-actions/), but it uses a different action, thus requiring slightly different steps (still outlined in that page).
 
+<<<<<<< HEAD
 With this approach come a couple problems though. First of all, the build time is longer (because the container downloads each plugin every time). For example, mine once reached 2 minutes.
+=======
+With this approach come a couple problems though. First of all, the build time is longer (because the container downloads each plugin every time). For example, mine once reached 1 minutes.
+>>>>>>> 4f50fc16c875fb87df12480f6e01bbf3a8c2d8e4
 
 If you use webhooks, you'll also notice double the `push` events, one for _your_ push and one for the _action's_ force-push.
 
