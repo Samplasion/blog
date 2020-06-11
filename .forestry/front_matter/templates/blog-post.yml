@@ -6,9 +6,6 @@ fields:
 - type: text
   name: title
   label: Title
-- type: text
-  name: slug
-  label: slug
 - type: datetime
   name: date
   label: date
@@ -25,4 +22,4 @@ fields:
   label: Header image
 pages:
 - _posts/2020-06-23-build-jekyll-with-custom-plugins-on-github-pages.md
-- _posts/build-jekyll-with-custom-plugins-on-github-pages.md
+- _posts/what-was-announced-during-the-ps5-reveal-event.md
