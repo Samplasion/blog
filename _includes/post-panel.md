@@ -15,9 +15,9 @@
             <div class="card-image panel-block is-active" style="padding:0;margin:0;">
                 <figure class="image is-16by9" style="height: 100%;width: 100%;">
                     {% if post.image contains "://" %}
-                        ![{{ post.title }}]({{ post.image }} "{{ post.title }}")
+                        <img src="{{ post.image }}" alt="{{ post.title }}" />
                     {% else %}
-                        ![{{ post.title }}]({{ post.image }} "{{ post.title }}")
+                        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" />
                     {% endif %}
                 </figure>
             </div>
