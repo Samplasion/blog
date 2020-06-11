@@ -32,7 +32,7 @@ First of all, [create a Jekyll blog]({% post_url 2020-06-18-jekyll-101 %} "Jekyl
 
 Then create a file named `Gemfile` in the root of your project and paste in the following code:
 
-{%- capture code -%}
+{%- capture gemcode -%}
 source "https://rubygems.org"
 
 gem "jekyll"
@@ -41,7 +41,7 @@ group :jekyll_plugins do
     # Add your plugins here
 end
 {%- endcapture -%}
-{% include highlight.html lang="ruby" code=code %}
+{% include highlight.html lang="ruby" code=gemcode %}
 
 Where it says `# Add your plugins here`, you must add all of the plugins you included in `_config.yml` in the following format: `gem 'plugin-name'`.
 
