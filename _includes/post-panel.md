@@ -17,7 +17,8 @@
                     {% if post.image contains "://" %}
                         <img src="{{ post.image }}" alt="{{ post.title }}" />
                     {% else %}
-                        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" />
+                        <!--img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" /-->
+                        {% responsive_image path: post.image alt: post.title title: post.title %}
                     {% endif %}
                 </figure>
             </div>
