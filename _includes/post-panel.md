@@ -3,7 +3,7 @@
 <img src="{{ post.image }}" alt="{{ post.title }}" />
 {% else %}
 {% responsive_image_block %}
-  path: {{ post.image | replace "/assets", "assets" }}
+  path: {{ post.image | replace: "/assets", "assets" }}
   alt: {{ post.title }}
   title: {{ post.title }}
 {% endresponsive_image_block %}
