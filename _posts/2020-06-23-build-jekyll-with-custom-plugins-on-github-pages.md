@@ -48,7 +48,7 @@ Where it says `# Add your plugins here`, you must add all of the plugins you inc
 Then, return to the homepage of the repo and switch to the _Actions_ tab and create a _New workflow_. _Set up a workflow yourself_ and paste in this code:
 
 {%- capture code -%}
-{%- raw -%}
+{% raw %}
 name: Jekyll Deploy
 
 on:
@@ -77,7 +77,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-{%- endraw -%}
+{% endraw %}
 {%- endcapture -%}{%- include highlight.html lang="yaml" code=code -%}
 
 The `on.schedule[].cron` key follows a specific syntax that [you can practice on this website](https://crontab.guru/) if you need to schedule a build at one or more particular times a day. If you don't need scheduling, you can delete the `on.schedule` key entirely. With the setup I gave you, the action will be triggered **on push** (`on.push`) and **every day at midnight** (`on.schedule[].cron`). The name can be whatever you want, but it's what you'll see in the push deploy stats.
