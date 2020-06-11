@@ -18,6 +18,8 @@ sass:
   sass_dir: _sass
   style: compact
 
+default_image: assets/images/2019/12/florian-olivo-4hbJ-eymZ1o-unsplash_o.jpg
+
 # Default values
 defaults:
   -

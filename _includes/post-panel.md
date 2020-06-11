@@ -5,7 +5,7 @@
 {% else %}
 {% responsive_image_block %}
 {
-  "path": {{ post.image | replace: "/assets", "assets" | jsonify | replace: "null", "assets/images/2019/12/florian-olivo-4hbJ-eymZ1o-unsplash_o.jpg" }},
+  "path": {{ post.image | replace: "/assets", "assets" | jsonify | replace: "null", site.default_image }},
   "alt": {{ post.title | jsonify }},
   "title": {{ post.title | jsonify }}
 }
