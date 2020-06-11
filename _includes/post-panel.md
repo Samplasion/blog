@@ -1,5 +1,5 @@
 {% capture image_markup %}
-{% if post.image %}
+{% if post.image and include.resp %}
 {% if post.image contains "://" %}
 <img src="{{ post.image }}" alt="{{ post.title }}" />
 {% else %}
@@ -9,6 +9,11 @@
   title: {{ post.title }}
 {% endresponsive_image_block %}
 {% endif %}
+{% else %}
+{% if post.image contains "://" %}
+<img src="{{ post.image }}" alt="{{ post.title }}" />
+{% else %}
+<img src="{{ post.image }}" alt="{{ post.title }}" />
 {% endif %}
 {% endcapture %}
 
