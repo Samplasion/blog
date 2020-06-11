@@ -1,12 +1,14 @@
 {% capture image_markup %}
+{% if post.image %}
 {% if post.image contains "://" %}
 <img src="{{ post.image }}" alt="{{ post.title }}" />
-{% elsif post.image %}
+{% else %}
 {% responsive_image_block %}
   path: {{ post.image | replace: "/assets", "assets" }}
   alt: {{ post.title }}
   title: {{ post.title }}
 {% endresponsive_image_block %}
+{% endif %}
 {% endif %}
 {% endcapture %}
 
