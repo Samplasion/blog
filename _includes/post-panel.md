@@ -1,3 +1,15 @@
+{% capture image_markup %}
+{% if post.image contains "://" %}
+<img src="{{ post.image }}" alt="{{ post.title }}" />
+{% else %}
+{% responsive_image_block %}
+  path: {{ post.image }}
+  alt: {{ post.title }}
+  title: {{ post.title }}
+{% endresponsive_image_block %}
+{% endif %}
+{% endcapture %}
+
 <div class="post column is-half">
     <article class="panel is-primary">
         <p class="panel-heading">
@@ -14,12 +26,7 @@
         {% if post.image %}
             <div class="card-image panel-block is-active" style="padding:0;margin:0;">
                 <figure class="image is-16by9" style="height: 100%;width: 100%;">
-                    {% if post.image contains "://" %}
-                        <img src="{{ post.image }}" alt="{{ post.title }}" />
-                    {% else %}
-                        <!--img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" /-->
-                        {% responsive_image path: {{ post.image }} alt: post.title title: post.title %}
-                    {% endif %}
+                    {{ image_markup }}
                 </figure>
             </div>
         {% endif %}
