@@ -6,4 +6,4 @@ My blog. ![Jekyll Deploy](https://github.com/Samplasion/blog/workflows/Jekyll%20
 :D
 
 {% assign test="testy roasr" %}
-{% responsive_image path: assets/images/2019/10/image_o.png test2: "test2" %}
+{% responsive_image path: assets/images/2019/10/image_o.png test2: test %}
