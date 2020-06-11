@@ -6,5 +6,5 @@ body_class: container
 
 ---
 {% for post in paginator.posts %}
-  {% include post-panel.md post=post %}
+  {% include post-panel.md post=post resp=true %}
 {% endfor %}
