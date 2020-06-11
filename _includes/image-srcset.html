@@ -3,4 +3,5 @@
         /{{ i.path }} {{ i.width }}w,
     {% endfor %}
 {% endcapture %}
+<!-- 1: {{ test }}; 2: {{ test2 }} -->
 <img src="/{{ path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }}">
