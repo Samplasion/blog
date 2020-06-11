@@ -4,9 +4,11 @@
 <img src="{{ post.image }}" alt="{{ post.title }}" />
 {% else %}
 {% responsive_image_block %}
-  path: {{ post.image | replace: "/assets", "assets" }}
-  alt: {{ post.title }}
-  title: {{ post.title }}
+{
+  "path": {{ post.image | replace: "/assets", "assets" | jsonify }}
+  "alt": {{ post.title | jsonify }}
+  "title": {{ post.title | jsonify }}
+}
 {% endresponsive_image_block %}
 {% endif %}
 {% else %}

@@ -14,5 +14,5 @@ group :jekyll_plugins do
     gem 'jekyll-timeago'
     gem 'jekyll-sitemap'
     gem 'jekyll-coffeescript'
-    gem 'jekyll-responsive-image'
+    gem 'jekyll-responsive-image', git: 'https://github.com/Samplasion/jekyll-responsive-image'
 end
