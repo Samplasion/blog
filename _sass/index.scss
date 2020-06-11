@@ -120,3 +120,8 @@ blockquote {
 	visibility: visible;
 	opacity: 1;
 }
+
+.post ul {
+    padding: initial !important;
+    list-style-type: unset !important;
+}
