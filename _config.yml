@@ -98,3 +98,5 @@ favicon: /assets/images/favicon/apple-touch-icon.png
 
 # Language
 lang: en_US
+
+plugins_dir: ./_plugins
