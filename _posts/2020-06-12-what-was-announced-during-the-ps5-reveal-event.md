@@ -15,7 +15,7 @@ image: "/assets/uploaded/dualsense-ps5-img01-1280x720.jpg"
 ---
 It's currently 09:30PM UTC when I'm writing this and Sony's PS5 conference is over. Maybe you missed it, and want to know what was announced. Worry not, I've got you covered!
 
-<h3 class="is-title is-3">Games</h3>
+<h3 class="title is-3">Games</h3>
 
 These are the games that were announced:
 
@@ -53,11 +53,13 @@ The new console sports a design that, in my honest opinion, looks like a sci-fi 
 
 ![Two PlayStation 5 consoles, one with a disc reader, both with a DualSense next to them](/assets/uploaded/screen-shot-2020-06-11-at-4-12-14-pm.png "PS5 models")
 
-As you can see, Sony planned 2 models to come out this year. The usual disc model is accompanied by a new disc-less "Digital Edition", the budget model.
+As you can see, Sony planned 2 models to come out this year. The usual disc model - a standard edition with a 4K Blu-Ray disc drive - is accompanied by a new disc-less "Digital Edition", the budget model, akin to the PS4 Slim (except it has no disc reader).
+
+Both models sport a "super-fast SSD", which is an improvement against the Hard Disk the old model had.
 
 Aside for being the optimal spot for dust, the PlayStation 5's white finish is most likely the only color we'll see in a while.
 
-<h3 class="is-title is-3">Accessories</h3>
+<h3 class="title is-3">Accessories</h3>
 
 Sony released a plethora of accessories to the console. Namely:
 
@@ -65,6 +67,10 @@ Sony released a plethora of accessories to the console. Namely:
 * HD Camera
 * Pulse 3D Wireless Headset
 * Media Remote
+
+Here's the complete line-up:
+
+![A DualSense controller, a PlayStation 5, a PlayStation 5 Digital edition, a Pulse 3D Headset, a Media Remote, a DualSense charging station and a HD camera.](/assets/uploaded/ps5-lineup.jpg "The PS5 Line-up")
 
 It seems to me like they're trying to appeal to everyone with this.
 
@@ -75,3 +81,7 @@ Watch the official unveil animation:
 By the way, the DualSense has a USB-C connector:
 
 {% include yt.html id="SebzB8W3bVU" %}
+
+Sony has [officially confirmed](https://blog.us.playstation.com/2019/10/08/an-update-on-next-gen-playstation-5-launches-holiday-2020/) that the PS5 will release globally "in time for Holiday 2020", making it the perfect gift for your beloved children.
+
+Anyways, jokes aside, it's all from me on this extraordinary day. Happy future gaming!
