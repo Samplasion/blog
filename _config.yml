@@ -42,13 +42,13 @@ plugins:
   - jekyll-autoprefixer
   - jekyll-coffeescript
   - jekyll-cloudcannon-schedule
+  - jekyll-feed
   - jekyll-mentions
   - jekyll-menus
   - jekyll-paginate
   - jekyll-responsive-image
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-tagging-related_posts
   - jekyll-timeago
   - jekyll-youtube
   - jemoji
