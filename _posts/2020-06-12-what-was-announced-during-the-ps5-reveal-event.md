@@ -75,11 +75,11 @@ It seems to me like they're trying to appeal to everyone with this.
 
 Watch the official unveil animation:
 
-{% include yt.html id="RkC0l4iekYo" %}
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RkC0l4iekYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
 
 By the way, the DualSense has a USB-C connector:
 
-{% include yt.html id="SebzB8W3bVU" %}
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SebzB8W3bVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
 
 Sony has [officially confirmed](https://blog.us.playstation.com/2019/10/08/an-update-on-next-gen-playstation-5-launches-holiday-2020/) that the PS5 will release globally "in time for Holiday 2020", making it the perfect gift for your beloved children.
 
