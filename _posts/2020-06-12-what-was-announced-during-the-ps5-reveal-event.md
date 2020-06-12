@@ -10,7 +10,7 @@ tags:
 - PS5
 - Reveal
 - Live Streaming
-image: "/assets/uploaded/dualsense-ps5-img01-1280x720.jpg"
+image: "/assets/uploaded/schermata-2020-06-12-alle-09-26-18.png"
 
 ---
 It's currently 09:30PM UTC when I'm writing this and Sony's PS5 conference is over. Maybe you missed it, and want to know what was announced. Worry not, I've got you covered!
