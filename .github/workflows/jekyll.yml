@@ -10,6 +10,9 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
     steps:
       - name: GitHub Checkout
         uses: actions/checkout@v1
@@ -20,6 +23,10 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
       - name: Build & Deploy to GitHub Pages
         uses: Samplasion/jekyll4-deploy-gh-pages@master
         env:
