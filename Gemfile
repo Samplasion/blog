@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem 'execjs'
-gem 'therubyracer'
+gem 'mini_racer'
 
 group :jekyll_plugins do
     gem 'jekyll-archives'
