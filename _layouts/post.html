@@ -21,8 +21,8 @@ layout: default
     <div>
         <h3 class="title is-3">You may also like:</h3>
         <ul>
-            {% for related_post in site.related_posts limit: 4 %}
-                {% include post-panel.md post=related_post compact=true %}
+            {% for related_post in site.related_posts limit: 5 %}
+                <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
             {% endfor %}
         </ul>
     </div>
