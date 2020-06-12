@@ -1,6 +1,5 @@
 ---
 title: What was announced during the PS5 reveal event
-slug: ''
 date: 2020-06-12T10:00:00.000+02:00
 excerpt: Maybe you missed Sony's PS5 conference, and want to know what was announced.
   Worry not, I've got you covered!
