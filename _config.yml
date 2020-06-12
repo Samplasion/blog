@@ -56,6 +56,8 @@ plugins:
   - liquid_reading_time
 #  - premonition
 
+encoding: utf-8
+
 jekyll-mentions:
   base_url: https://twitter.com
 
