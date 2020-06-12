@@ -39,17 +39,22 @@ defaults:
 # Additional plugins
 plugins: 
   - jekyll-archives
-  - jekyll-feed
-  - jekyll-paginate
-  - jemoji
+  - jekyll-autoprefixer
   - jekyll-coffeescript
-  - jekyll-sitemap
   - jekyll-cloudcannon-schedule
-  - jekyll-seo-tag
+  - jekyll-feed
   - jekyll-mentions
   - jekyll-menus
-  - jekyll-timeago
+  - jekyll-paginate
   - jekyll-responsive-image
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-tagging-related_posts
+  - jekyll-timeago
+  - jekyll-youtube
+  - jemoji
+  - liquid_reading_time
+  - premonition
 
 jekyll-mentions:
   base_url: https://twitter.com
