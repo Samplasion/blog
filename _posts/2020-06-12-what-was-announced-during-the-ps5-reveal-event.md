@@ -12,7 +12,7 @@ tags:
 image: "/assets/uploaded/schermata-2020-06-12-alle-09-26-18.png"
 
 ---
-It's currently 09:30PM UTC when I'm writing this and Sony's PS5 conference is over. Maybe you missed it, and want to know what was announced. Worry not, I've got you covered!
+It's currently 09:30PM UTC of June 11 when I'm writing this and Sony's PS5 conference is over. Maybe you missed it, and want to know what was announced. Worry not, I've got you covered!
 
 <h3 class="title is-3">Games</h3>
 
@@ -46,7 +46,7 @@ These are the games that were announced:
 
 As you can see, we've got some big titles coming, as well as smaller ones.
 
-<h3 class="is-title is-3">Design</h3>
+<h3 class="title is-3">Design</h3>
 
 The new console sports a design that, in my honest opinion, looks like a sci-fi Wi-Fi router positioned sideways. Obviously, that's my view, but nonetheless, this new console, only white for the time being, has a new, fluid design, highly contrasting with the squarish design of its predecessor.
 
@@ -60,7 +60,7 @@ Aside for being the optimal spot for dust, the PlayStation 5's white finish is m
 
 <h3 class="title is-3">Accessories</h3>
 
-Sony released a plethora of accessories to the console. Namely:
+Sony revealed a plethora of accessories to the console. Namely:
 
 * DualSense Charging Station
 * HD Camera
@@ -83,4 +83,4 @@ By the way, the DualSense has a USB-C connector:
 
 Sony has [officially confirmed](https://blog.us.playstation.com/2019/10/08/an-update-on-next-gen-playstation-5-launches-holiday-2020/) that the PS5 will release globally "in time for Holiday 2020", making it the perfect gift for your beloved children.
 
-Anyways, jokes aside, it's all from me on this extraordinary day. Happy future gaming!
+Anyway, jokes aside, it's all from me on this extraordinary day. Happy future gaming!
