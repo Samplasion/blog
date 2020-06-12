@@ -9,7 +9,6 @@ group :jekyll_plugins do
     gem 'jekyll-autoprefixer'
     gem 'jekyll-cloudcannon-schedule'
     gem 'jekyll-coffeescript'
-    gem 'jekyll-feed'
     gem 'jekyll-mentions'
     gem 'jekyll-menus'
     gem 'jekyll-paginate'
