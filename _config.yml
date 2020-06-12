@@ -54,7 +54,7 @@ plugins:
   - jekyll-youtube
   - jemoji
   - liquid_reading_time
-  - premonition
+#  - premonition
 
 encoding: utf-8
 

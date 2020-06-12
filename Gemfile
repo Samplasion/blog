@@ -21,5 +21,5 @@ group :jekyll_plugins do
     gem 'jekyll-youtube'
     gem 'jemoji'
     gem 'liquid_reading_time'
-    gem "premonition", "4.0.0"
+#    gem "premonition", "4.0.0"
 end
