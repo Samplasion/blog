@@ -33,6 +33,7 @@
                 </span> &middot; {{ post.content | reading_time }} minute read
             </div><!-- .entry-meta -->
         </header><!-- .entry-header -->
+        {% unless include.compact %}
         {% if post.image %}
             <div class="card-image panel-block is-active" style="padding:0;margin:0;">
                 <figure class="image is-16by9" style="height: 100%;width: 100%;">
@@ -40,6 +41,7 @@
                 </figure>
             </div>
         {% endif %}
+        {% endunless %}
         <div class="panel-block is-active entry-content">
             <span>{{ post.excerpt }}&nbsp;&mdash;&nbsp;<a href="{{ post.url | relative_url }}">Read&nbsp;more&nbsp;&raquo;</a></span>
         </div>
