@@ -49,11 +49,12 @@ plugins:
   - jekyll-responsive-image
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-tagging-related_posts
   - jekyll-timeago
   - jekyll-youtube
   - jemoji
   - liquid_reading_time
-  - premonition
+#  - premonition
 
 jekyll-mentions:
   base_url: https://twitter.com
