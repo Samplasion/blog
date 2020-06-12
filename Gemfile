@@ -6,7 +6,7 @@ gem "jekyll"
 
 group :jekyll_plugins do
     gem 'jekyll-archives'
-    gem 'jekyll-autoprefixer'
+    # gem 'jekyll-autoprefixer'
     gem 'jekyll-cloudcannon-schedule'
     gem 'jekyll-coffeescript'
     gem 'jekyll-feed'
@@ -21,5 +21,5 @@ group :jekyll_plugins do
     gem 'jekyll-youtube'
     gem 'jemoji'
     gem 'liquid_reading_time'
-#    gem "premonition", "4.0.0"
+    gem "premonition", "4.0.0"
 end

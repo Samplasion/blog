@@ -39,7 +39,7 @@ defaults:
 # Additional plugins
 plugins: 
   - jekyll-archives
-  - jekyll-autoprefixer
+#  - jekyll-autoprefixer
   - jekyll-coffeescript
   - jekyll-cloudcannon-schedule
   - jekyll-feed
@@ -54,7 +54,7 @@ plugins:
   - jekyll-youtube
   - jemoji
   - liquid_reading_time
-#  - premonition
+  - premonition
 
 encoding: utf-8
 
