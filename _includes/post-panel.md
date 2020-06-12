@@ -30,7 +30,7 @@
                 {%- comment -%}Posted on {{ post.date | date_to_long_string }}{%- endcomment -%}
                 Posted <span class="tooltip">{{ post.date | timeago }}
                     <span class="tooltiptext">{{ post.date | date_to_long_string }}</span>
-                </span> • {{ post.content | reading_time }} minute read
+                </span> &middot; {{ post.content | reading_time }} minute read
             </div><!-- .entry-meta -->
         </header><!-- .entry-header -->
         {% if post.image %}

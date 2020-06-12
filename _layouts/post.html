@@ -10,7 +10,7 @@ layout: default
         {%- comment -%}Posted on {{ page.date | date_to_long_string }}{%- endcomment -%}
         Posted <span class="tooltip">{{ page.date | timeago }}
             <span class="tooltiptext">{{ page.date | date_to_long_string }}</span>
-        </span> • {{ content | reading_time }} minute read
+        </span> &middot; {{ content | reading_time }} minute read
     </div>
 
     {{content}}
