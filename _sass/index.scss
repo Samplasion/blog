@@ -62,6 +62,10 @@ blockquote {
 @media all and (max-width: 1024px) {
 	.container {
 		margin: 0 1.5rem;
+
+		.navbar & {
+			margin: 0;
+		}
 	}
 }
 
