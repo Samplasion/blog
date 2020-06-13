@@ -8,9 +8,7 @@ layout: default
     <h1 class="title is-1">{{ page.title }}</h1>
     <div class="subtitle is-6">
         {%- comment -%}Posted on {{ page.date | date_to_long_string }}{%- endcomment -%}
-        Posted <span class="tooltip">{{ page.date | timeago }}
-            <span class="tooltiptext">{{ page.date | date_to_long_string }}</span>
-        </span> &middot; {{ content | reading_time }} minute read
+        Posted <span class="tooltip"><span class="post-date" data-time="{{ post.date | date_to_xmlschema }}">{{ post.date | timeago }}</span><span class="tooltiptext">{{ post.date | date_to_long_string }}</span></span> &middot; {{ content | reading_time }} minute read
     </div>
 
     <div class="content">
