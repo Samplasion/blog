@@ -20,6 +20,14 @@
 {% endif %}
 {% endcapture %}
 
+{%- capture pub -%}
+{% unless include.uglyDate %}
+Posted <span class="tooltip">{{ post.date | timeago }}<span class="tooltiptext">{{ post.date | date_to_long_string }}</span></span>
+{% else %}
+Posted {{ post.date | date_to_long_string }}
+{% endunless %}
+{%- endcapture -%}
+
 <div class="post column is-half">
     <article class="panel is-primary">
         <p class="panel-heading">
@@ -28,9 +36,7 @@
         <header class="panel-block is-active" style="flex-direction: column;">
             <div class="subtitle is-6">
                 {%- comment -%}Posted on {{ post.date | date_to_long_string }}{%- endcomment -%}
-                Posted <span class="tooltip">{{ post.date | timeago }}
-                    <span class="tooltiptext">{{ post.date | date_to_long_string }}</span>
-                </span> &middot; {{ post.content | reading_time }} minute read
+                {{ pub }} &middot; {{ post.content | reading_time }} minute read
             </div><!-- .entry-meta -->
         </header><!-- .entry-header -->
         {% unless include.compact %}
