@@ -147,3 +147,10 @@ blockquote {
 .gallery {
 	display: flex;
 }
+
+.number {
+	display: inherit;
+	font-size: inherit;
+	padding: 0rem .5rem;
+	margin-right: 0;
+}
