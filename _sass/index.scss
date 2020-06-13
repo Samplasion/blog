@@ -154,3 +154,8 @@ blockquote {
 	padding: 0rem .5rem;
 	margin-right: 0;
 }
+
+.tag:not(body) {
+	display: inherit;
+    font-size: 1em;
+}
