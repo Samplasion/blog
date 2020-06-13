@@ -149,7 +149,7 @@ blockquote {
 	& > * {
 		flex-basis: 100%;
 		flex-grow: 1;
-		width: 0%;
+		width: 0% !important;
 	}
 }
 
