@@ -54,6 +54,7 @@ plugins:
   - jekyll-youtube
   - jemoji
   - liquid_reading_time
+  - premonition
 
 jekyll-spaceship:
   processors:
