@@ -10,35 +10,18 @@ tags:
  - "Computer"
 ---
 
-<p>To make a block converter, we need to know what the conversions are:</p><!--kg-card-begin: html--><figure class="kg-card kg-card-hascaption">
-    <table style="width: 100%">
-        <tr>
-            <td></td>
-            <th>MB</th>
-            <th>GB</th>
-            <th>Blocks</th>
-        </tr>
-        <tr>
-            <th>MB</th>
-            <td>1</td>
-            <td>1/1024</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <th>GB</th>
-            <td>1024</td>
-            <td>1</td>
-            <td>8192</td>
-        </tr>
-        <tr>
-            <th>Blocks</th>
-            <td>1/8</td>
-            <td>1/8192</td>
-            <td>1</td>
-        </tr>
-    </table>
-    <figcaption>The value is the number of the size on top needed to get the size on the left</figcaption>
-</figure><!--kg-card-end: html--><p>Then, we can start defining functions:</p><pre><code class="language-ruby">def bl_to_mb(bl) # block to mb
+<p>To make a block converter, we need to know what the conversions are:</p><!--kg-card-begin: html-->
+
+<figure>
+|            |     MB      |             GB           | Blocks |
+| :--------: | :---------: | :----------------------: | :----: |
+|   **MB**   |      1      |   1/1024 = 0.0009765625  |    8   |
+|   **GB**   |     1024    |             1            |  8192  |
+| **Blocks** | 1/8 = 0.125 | 1/8192 = 0.0001220703125 |    1   |
+  <figcaption>The value is the number of the size on top needed to get the size on the left</figcaption>
+</figure>
+
+<!--kg-card-end: html--><p>Then, we can start defining functions:</p><pre><code class="language-ruby">def bl_to_mb(bl) # block to mb
   return bl / 8
 end
 
