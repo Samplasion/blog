@@ -21,12 +21,11 @@ layout: default
     <hr>
     <div>
         <h3 class="title is-3">You may also like:</h3>
-        <div class="columns is-multiline">
+        <ul style="list-style-type: none;">
             {% for related_post in site.related_posts limit: 5 %}
-                {% include post-panel.md post=related_post compact=true uglydate=true %}
-                <a href="{{ related_post.url }}">{{ related_post.title }}</a>
+                <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
             {% endfor %}
-        </div>
+        </ul>
     </div>
     {% endif %}
 
