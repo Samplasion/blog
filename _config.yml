@@ -57,7 +57,6 @@ plugins:
 
 jekyll-spaceship:
   processors:
-    - mathjax-processor
     - plantuml-processor
     - polyfill-processor
     - video-processor
