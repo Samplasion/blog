@@ -1,6 +1,7 @@
 ---
 title: "How to save SHSH2 blobs"
 slug: how-to-save-shsh2-blobs
+alias: /how-to-save-shsh2-blobs/index.html
 comment_id: 5dbaf2c158602e007d19fdf0
 date: 2019-11-26T17:45:00.000Z
 excerpt: "On iDevices, blobs are essential for a successful downgrade. However, a new or inexperienced user might find trouble finding the right tools to save them."

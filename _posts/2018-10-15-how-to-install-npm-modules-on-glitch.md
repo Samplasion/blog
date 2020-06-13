@@ -1,6 +1,7 @@
 ---
 title: "How to install NPM modules on Glitch"
 slug: how-to-install-npm-modules-on-glitch
+alias: /how-to-install-npm-modules-on-glitch/index.html
 comment_id: 5d93b51a97132a02c4355739
 date: 2018-10-15T13:38:00.000Z
 excerpt: "A quick tutorial on how to install NPM modules on Glitch"

@@ -1,6 +1,7 @@
 ---
 title: "Nintendo has been locking down their CDN"
 slug: nintendo-has-been-locking-down-their-cdn-is-this-the-end-of-freeshop-and-wii-u-usb-helper
+alias: /nintendo-has-been-locking-down-their-cdn-is-this-the-end-of-freeshop-and-wii-u-usb-helper/index.html
 comment_id: 5d93b51a97132a02c4355737
 date: 2018-08-10T13:50:00.000Z
 excerpt: "Nintendo has locked down their CDN. This means that we will not be able to access their eShop servers anymore."

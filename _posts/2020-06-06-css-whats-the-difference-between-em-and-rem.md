@@ -1,6 +1,7 @@
 ---
 title: "CSS: What’s the difference between em and rem?"
 slug: css-whats-the-difference-between-em-and-rem
+alias: /css-whats-the-difference-between-em-and-rem/index.html
 comment_id: 5ec6c80cbaf75100d8247156
 date: 2020-06-06T08:00:00.000Z
 excerpt: "If you have tried working with CSS, you'll have noticed two special units: em and rem — but what's the difference?"

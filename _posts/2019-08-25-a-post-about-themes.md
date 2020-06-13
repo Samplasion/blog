@@ -1,6 +1,7 @@
 ---
 title: "A post about themes"
 slug: a-post-about-themes
+alias: /a-post-about-themes/index.html
 comment_id: 5d93b51a97132a02c435573d
 date: 2019-08-25T21:46:32.000Z
 excerpt: "Just me talking about the blog's theme."

@@ -1,6 +1,7 @@
 ---
 title: "How to build your own Chromium release for starters"
 slug: how-to-create-your-own-own-chromium-release-for-starters
+alias: /how-to-create-your-own-own-chromium-release-for-starters/index.html
 comment_id: 5d93b51a97132a02c435573e
 date: 2019-08-28T16:43:00.000Z
 excerpt: "In this post, we'll take a look at a comprehensive way to build a custom Chromium release."

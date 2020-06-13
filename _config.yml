@@ -117,6 +117,7 @@ lang: en_US
 
 # Custom plugins
 plugins_dir: ./_plugins
+safe: false
 
 # Responsive images
 responsive_image:

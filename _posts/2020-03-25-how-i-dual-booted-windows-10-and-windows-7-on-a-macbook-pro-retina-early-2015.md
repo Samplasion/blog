@@ -1,6 +1,7 @@
 ---
 title: "How I dual-booted Windows 10 and Windows 7 on a MacBook Pro from 2015"
 slug: how-i-dual-booted-windows-10-and-windows-7-on-a-macbook-pro-retina-early-2015
+alias: /how-i-dual-booted-windows-10-and-windows-7-on-a-macbook-pro-retina-early-2015/index.html
 comment_id: 5e7b05ab0feaf7007ba58543
 date: 2020-03-25T09:00:00.000Z
 excerpt: "Yes, I know it's weird. But this quarantine has given me some free time to experiment, and today, I'm gonna share my story how I installed Windows 10 and Windows 7 in a dual-boot."

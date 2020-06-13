@@ -1,6 +1,7 @@
 ---
 title: "CSS: Why is dark grey lighter than regular grey?"
 slug: css-why-is-dark-grey-lighter-than-regular-grey
+alias: /css-why-is-dark-grey-lighter-than-regular-grey/index.html
 comment_id: 5ec7c1fc0107fc0f64556f69
 date: 2020-06-13T08:00:00.000Z
 excerpt: "It's not easy to notice. Heck, I didn't even notice it until I read about it on Reddit. So what's the matter?"

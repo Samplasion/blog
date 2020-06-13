@@ -1,6 +1,7 @@
 ---
 title: "Around the World in 80 Days Level Editor"
 slug: around-the-world-in-80-days-level-editor
+alias: /around-the-world-in-80-days-level-editor/index.html
 comment_id: 5eb5424f313c86007b9533d7
 date: 2020-05-16T08:00:00.000Z
 excerpt: "This level editor is made using pure HTML, JS and CSS. Nothing else. This also means that the site will also work offline."

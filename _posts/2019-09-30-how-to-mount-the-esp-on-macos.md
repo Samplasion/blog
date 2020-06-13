@@ -1,6 +1,7 @@
 ---
 title: "How to mount the ESP on macOS"
 slug: how-to-mount-the-esp-on-macos
+alias: /how-to-mount-the-esp-on-macos/index.html
 comment_id: 5d93b51a97132a02c4355743
 date: 2019-09-30T19:27:14.000Z
 excerpt: "How many times do you have to mount the ESP to your computer? I bet it's almost never. Well, in this post we'll not only see once again how to do so, but we'll also implement an alias to do so with a handy memorable shortcut."

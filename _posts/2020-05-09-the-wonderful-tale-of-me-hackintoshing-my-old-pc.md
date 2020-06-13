@@ -1,6 +1,7 @@
 ---
 title: The wonderful tale of me hackintoshing my old PC
 slug: the-wonderful-tale-of-me-hackintoshing-my-old-pc
+alias: /the-wonderful-tale-of-me-hackintoshing-my-old-pc/index.html
 comment_id: 5eb3d17d22bc05030cb76cbe
 date: 2020-05-09 08:00:00
 excerpt: >-

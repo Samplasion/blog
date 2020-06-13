@@ -1,6 +1,7 @@
 ---
 title: "I injected SMB3Mix into my 3DS!"
 slug: i-injected-smb3mix-into-my-3ds
+alias: /i-injected-smb3mix-into-my-3ds/index.html
 comment_id: 5d93b51a97132a02c4355733
 date: 2017-11-05T09:21:00.000Z
 excerpt: "Yesterday I got SMB 3Mix in my Nintendo 3DS injected in a .cia"

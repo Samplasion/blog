@@ -1,6 +1,7 @@
 ---
 title: "Do NOT use Freenom for long-term projects"
 slug: do-not-use-freenom-for-long-term-projects
+alias: /do-not-use-freenom-for-long-term-projects/index.html
 comment_id: 5db9c63e3a3e3000823fc6be
 date: 2019-10-30T17:30:23.000Z
 excerpt: "Recently, I've switched domains from my old .tk domain (samplasion.tk) to a new one under the protective wing of JS.ORG (many thanks to them for offering me this free space). But what pushed me to do that?"

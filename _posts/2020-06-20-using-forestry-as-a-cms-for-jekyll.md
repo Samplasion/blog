@@ -1,6 +1,7 @@
 ---
 title: Using Forestry as a CMS for Jekyll
 slug: using-forestry-as-a-cms-for-jekyll
+alias: /using-forestry-as-a-cms-for-jekyll/index.html
 date: 2020-06-20T10:00:00.000+02:00
 excerpt: Jekyll sure is a wonderful system for quick static sites or personal projects,
   but I think we can all agree that adding posts is a bit hard for the non-programmers.

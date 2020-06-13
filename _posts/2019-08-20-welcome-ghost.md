@@ -1,6 +1,7 @@
 ---
 title: "Welcome, Ghost!"
 slug: welcome-ghost
+alias: /welcome-ghost/index.html
 comment_id: 5d93b51a97132a02c4355732
 date: 2019-08-20T11:20:03.000Z
 excerpt: "A brief description of the new blog backend."

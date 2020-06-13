@@ -1,6 +1,7 @@
 ---
 title: "Update your encTitleKeys with an homebrew"
 slug: update-your-enctitlekeys-with-an-homebrew
+alias: /update-your-enctitlekeys-with-an-homebrew/index.html
 comment_id: 5d93b51a97132a02c4355734
 date: 2017-11-05T20:44:00.000Z
 excerpt: "In this post, we'll take a look to a way to update the title keys for freeShop."

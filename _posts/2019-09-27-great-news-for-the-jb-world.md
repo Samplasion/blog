@@ -1,6 +1,7 @@
 ---
 title: "Great news for the jailbreaking world!"
 slug: great-news-for-the-jb-world
+alias: /great-news-for-the-jb-world/index.html
 comment_id: 5d93b51a97132a02c4355742
 date: 2019-09-27T15:15:01.000Z
 excerpt: "It looks like the great minds of our wonderful community never stop surprising us. Why? @axi0mX on Twitter published a bootrom exploit called checkm8, for all devices A5-A11."

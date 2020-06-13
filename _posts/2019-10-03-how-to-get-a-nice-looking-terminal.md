@@ -1,6 +1,7 @@
 ---
 title: "How to get a nice-looking terminal"
 slug: how-to-get-a-nice-looking-terminal
+alias: /how-to-get-a-nice-looking-terminal/index.html
 comment_id: 5d949225819a4002bbb042e3
 date: 2019-10-03T20:34:30.000Z
 excerpt: "If you use the terminal on a regular basis, you know it looks kinda bad. But it's quite understandable, because the shells were made to be useful, not nice-looking. If you want to have a nice terminal, though, nothing can stop you."

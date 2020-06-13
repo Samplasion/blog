@@ -1,6 +1,7 @@
 ---
 title: "Let's make: Nintendo block to Megabyte/Gigabyte converter"
 slug: lets-make-nintendo-block-to-megabyte-gigabyte-converter
+alias: /lets-make-nintendo-block-to-megabyte-gigabyte-converter/index.html
 comment_id: 5d93b51a97132a02c4355738
 date: 2018-08-18T08:20:00.000Z
 excerpt: "In this post we'll make a block converter in Ruby."

@@ -1,6 +1,7 @@
 ---
 title: "Tech Showcase: Yamamura"
 slug: tech-showcase-yamamura
+alias: /tech-showcase-yamamura/index.html
 comment_id: 5d93b51a97132a02c435573a
 date: 2019-07-17T13:42:00.000Z
 excerpt: "Today I want to showcase a bot NightYoshi and I made."
