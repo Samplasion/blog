@@ -13,11 +13,13 @@ tags:
 <p>To make a block converter, we need to know what the conversions are:</p><!--kg-card-begin: html-->
 
 <figure>
+
 |            |     MB      |             GB           | Blocks |
 | :--------: | :---------: | :----------------------: | :----: |
 |   **MB**   |      1      |   1/1024 = 0.0009765625  |    8   |
 |   **GB**   |     1024    |             1            |  8192  |
 | **Blocks** | 1/8 = 0.125 | 1/8192 = 0.0001220703125 |    1   |
+
   <figcaption>The value is the number of the size on top needed to get the size on the left</figcaption>
 </figure>
 
