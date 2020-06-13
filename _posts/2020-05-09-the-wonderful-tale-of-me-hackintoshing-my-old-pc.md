@@ -14,7 +14,8 @@ tags:
 
 <!--kg-card-begin: html-->
 
-> ***Important Notice**\: The process I'm about to describe falls under a legal grey area, as it's against Apple's Terms of Service. I do not encourage anyone to download the stuff I downloaded. For a "legally safer" way to hackintosh, especially useful if you have a newer computer with EFI support, **head over to [r/hackintosh](https://reddit.com/r/hackintosh)**. (no, I'm not sponsored)*<!--kg-card-end: html-->
+> warning "Important Notice"
+> The process I'm about to describe falls under a legal grey area, as it's against Apple's Terms of Service. I do not encourage anyone to download the stuff I downloaded. For a "legally safer" way to hackintosh, especially useful if you have a newer computer with EFI support, **head over to [r/hackintosh](https://reddit.com/r/hackintosh)**. (no, I'm not sponsored)
 
 Ahh, the quarantine, what makes me do...
 
