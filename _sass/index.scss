@@ -159,3 +159,9 @@ blockquote {
 	display: inherit;
     font-size: 1em;
 }
+
+.gallery > * {
+    flex-basis: 100%;
+    flex-grow: 1;
+    width: 0%;
+}
