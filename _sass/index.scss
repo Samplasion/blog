@@ -137,7 +137,7 @@ blockquote {
 		list-style-type: unset !important;
 	}
 
-	& img:not(.emoji) {
+	& :not(.gallery) img:not(.emoji) {
 		max-height: 50vh;
 		width: 100%;
 		object-fit: contain;
@@ -146,6 +146,11 @@ blockquote {
 
 .gallery {
 	display: flex;
+	& > * {
+		flex-basis: 100%;
+		flex-grow: 1;
+		width: 0%;
+	}
 }
 
 .number {
@@ -158,10 +163,4 @@ blockquote {
 .tag:not(body) {
 	display: inherit;
     font-size: 1em;
-}
-
-.gallery > * {
-    flex-basis: 100%;
-    flex-grow: 1;
-    width: 0%;
 }
