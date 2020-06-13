@@ -116,6 +116,12 @@ blockquote {
 	}
 }
 
+@media all and (prefers-color-scheme: dark) {
+	.tooltip {
+		border-bottom: 1px dotted rgb(175, 175, 175);
+	}
+}
+
 /* Tooltip arrow */
 .tooltip .tooltiptext
 
@@ -126,6 +132,14 @@ blockquote {
 }
 
 .post .content ul {
-    padding: initial !important;
-    list-style-type: unset !important;
+	& ul {
+		padding: initial !important;
+		list-style-type: unset !important;
+	}
+
+	& img {
+		max-height: 50vh;
+		width: 100%;
+		object-fit: contain;
+	}
 }
