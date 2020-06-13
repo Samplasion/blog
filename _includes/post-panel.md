@@ -23,7 +23,7 @@
 {%- capture pub -%}
 {% unless include.uglyDate %}
 {% if post.date %}
-Posted <span class="tooltip">{{ post.date | timeago }}<span class="tooltiptext">{{ post.date | date_to_long_string }}</span></span>
+Posted <span class="tooltip"><span class="post-date" data-time="{{ post.date | date_to_xmlschema }}">{{ post.date | timeago }}</span><span class="tooltiptext">{{ post.date | date_to_long_string }}</span></span>
 {% else %}
 Posted {{ post.date | date_to_long_string }}
 {% endif %}
