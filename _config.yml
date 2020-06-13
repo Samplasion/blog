@@ -55,6 +55,13 @@ plugins:
   - jemoji
   - liquid_reading_time
 
+jekyll-spaceship:
+  processors:
+    - mathjax-processor
+    - plantuml-processor
+    - polyfill-processor
+    - video-processor
+
 encoding: utf-8
 
 jekyll-mentions:
