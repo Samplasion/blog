@@ -18,4 +18,6 @@ Yeah. Except not. As David Burgess (@davidburgess00) found out, Google hides the
 
 {% twitter https://twitter.com/davidburgess00/status/1220815169472823296 %}
 
-But coupled with the fact that Google is relentlessly trying to  hide URLs
+But coupled with the fact that Google is relentlessly trying to hide URLs since a lot of time.
+
+And if that's not enough evidence for you, Chrome's Dev and Canary channels (version 85 as of writing) modify the appearance and behavior of web addresses in the address bar, *all* of them. They add a flag called "Omnibox UI Hide Steady-State URL Path, Query, and Ref" which hides everything in the current web address except the domain name, which would make this page's URL, `https://blog.samplasion.js.org/{{ page.title | slugify }}`, appear as just `blog.samplasion.js.org`.
