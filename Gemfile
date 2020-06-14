@@ -20,6 +20,7 @@ group :jekyll_plugins do
     gem 'jekyll-timeago'
     gem 'jekyll-twitter-plugin'
     gem 'jekyll-youtube'
+    gem 'jekyll_asset_pipeline'
     gem 'jemoji'
     gem 'liquid_reading_time'
     gem 'premonition', git: 'https://github.com/Samplasion/premonition'

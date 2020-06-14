@@ -1,3 +1,15 @@
+# Mac stuff (flexin on dem windows bois)
 .DS_Store
+
+# Jekyll cache
 .jekyll-cache
+
+# Node stuff
 node_modules
+
+# Development stuff
+.asset_pipeline/
+_admin/
+_site/
+assets/resized/
+Gemfile.lock
