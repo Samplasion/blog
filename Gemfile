@@ -6,7 +6,6 @@ gem "jekyll"
 
 group :jekyll_plugins do
     gem 'jekyll-archives'
-    gem 'jekyll-cloudcannon-schedule'
     gem 'jekyll-coffeescript'
     gem 'jekyll-feed'
     gem 'jekyll-mentions'
