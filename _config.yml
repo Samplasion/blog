@@ -51,6 +51,7 @@ plugins:
   - jekyll-spaceship
   - jekyll-tagging-related_posts
   - jekyll-timeago
+  - jekyll-twitter-plugin
   - jekyll-youtube
   - jemoji
   - liquid_reading_time

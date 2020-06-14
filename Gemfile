@@ -18,6 +18,7 @@ group :jekyll_plugins do
     gem 'jekyll-spaceship'
     gem 'jekyll-tagging-related_posts'
     gem 'jekyll-timeago'
+    gem 'jekyll-twitter-plugin'
     gem 'jekyll-youtube'
     gem 'jemoji'
     gem 'liquid_reading_time'
