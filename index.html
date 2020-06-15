@@ -3,8 +3,8 @@ layout: archive
 arc_title: Welcome!
 arc_subtitle: This is my blog. Find an article that you like or just explore!
 body_class: container
-
 ---
+
 {% for post in paginator.posts %}
   {% include post-panel.md post=post resp=true %}
 {% endfor %}
