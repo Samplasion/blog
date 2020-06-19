@@ -1,9 +1,8 @@
 # Mac stuff (flexin on dem windows bois)
 .DS_Store
 
-# Caches
+# Jekyll cache
 .jekyll-cache
-.sass-cache
 
 # Node stuff
 node_modules
