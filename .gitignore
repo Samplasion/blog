@@ -13,3 +13,4 @@ _admin/
 _site/
 assets/resized/
 Gemfile.lock
+*.scssc
