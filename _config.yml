@@ -47,7 +47,6 @@ plugins:
   - jekyll-responsive-image
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-spaceship
   - jekyll-tagging-related_posts
   - jekyll-timeago
   - jekyll-twitter-plugin

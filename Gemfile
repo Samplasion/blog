@@ -14,7 +14,7 @@ group :jekyll_plugins do
     gem 'jekyll-responsive-image', git: 'https://github.com/Samplasion/jekyll-responsive-image'
     gem 'jekyll-seo-tag'
     gem 'jekyll-sitemap'
-    gem 'jekyll-spaceship'
+    # gem 'jekyll-spaceship'
     gem 'jekyll-tagging-related_posts'
     gem 'jekyll-timeago'
     gem 'jekyll-twitter-plugin'
