@@ -8,10 +8,10 @@ tagline: "My blog with guides, how-tos and personal accomplishments."
 separator: " - "
 
 # Blog URL
-url: https://blog.samplasion.js.org
+url: https://samplasion.github.io/blog
 
 # The base url for the repo
-baseurl: ""
+baseurl: "/blog"
 
 # SASS compiler
 sass:
