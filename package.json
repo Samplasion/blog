@@ -1,0 +1,30 @@
+{
+  "name": "samplasionblog",
+  "version": "1.0.0",
+  "description": "My blog",
+  "main": "twitter_status.js",
+  "scripts": {
+    "test": "node twitter_status.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samplasion/blog.git"
+  },
+  "keywords": [
+    "samplasion",
+    "blog",
+    "tech",
+    "gh",
+    "github"
+  ],
+  "author": "Samplasion <dev@samplasion.js.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samplasion/blog/issues"
+  },
+  "homepage": "https://github.com/Samplasion/blog#readme",
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "twitter": "^1.7.1"
+  }
+}
