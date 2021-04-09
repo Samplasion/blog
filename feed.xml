@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://samplasion.github.io/blog/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samplasion.github.io/blog/blog/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2021-04-09T00:25:13+00:00</updated><id>https://samplasion.github.io/blog/blog/feed.xml</id><title type="html">Samplasion’s Blog</title><author><name>Samplasion</name></author><entry><title type="html">Creating CLI programs with Node.js</title><link href="https://samplasion.github.io/blog/blog/creating-cli-programs-with-node" rel="alternate" type="text/html" title="Creating CLI programs with Node.js" /><published>2020-06-25T08:00:00+00:00</published><updated>2020-06-25T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/creating-cli-programs-with-node</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/creating-cli-programs-with-node">&lt;p&gt;A CLI program is a quick way of interfacing with the user without the need to create a User Interface. How do we make one with Node?&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;A CLI program, in Node, is nothing more than a regular JS script that’s accessed from the command line. There’s nothing special to it.&lt;/p&gt;
+
+&lt;p&gt;You can access the arguments with &lt;code class=&quot;highlighter-rouge&quot;&gt;process.argv&lt;/code&gt;. It returns an array like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/usr/local/bin/node&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;~/Documents/JSPlon/plon&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Test.plon&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The first two are always the location of the Node executable and the location of the script. Everything else is what the user passed to the program.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve made your program, you must add this little snippet to your &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; to make your script work everywhere:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;&quot;bin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;relative location&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;highlighter-rouge&quot;&gt;command&lt;/code&gt; is what you’d like the user to type in the command line to get to your program (like: &lt;code class=&quot;highlighter-rouge&quot;&gt;plon&lt;/code&gt;) and &lt;code class=&quot;highlighter-rouge&quot;&gt;relative location&lt;/code&gt; is just the relative location of the script from your &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to test the program in the CLI without publishing, run &lt;code class=&quot;highlighter-rouge&quot;&gt;npm link&lt;/code&gt;. You can now run your script typing the &lt;code class=&quot;highlighter-rouge&quot;&gt;command&lt;/code&gt; from earlier.&lt;/p&gt;
+
+&lt;p&gt;Once you’re done testing, type &lt;code class=&quot;highlighter-rouge&quot;&gt;npm unlink&lt;/code&gt; to clean up.&lt;/p&gt;
+
+&lt;p&gt;When you want to publish, just type &lt;code class=&quot;highlighter-rouge&quot;&gt;npm publish&lt;/code&gt; as usual and follow the steps.&lt;/p&gt;
+
+&lt;p&gt;The end result is that something like this works:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plon test.plon
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And this:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#! /usr/bin/env plon&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Again, where &lt;code class=&quot;highlighter-rouge&quot;&gt;plon&lt;/code&gt; is the comamnd from earlier.&lt;/p&gt;
+
+&lt;p&gt;Alright, we’re done with this shorter tutorial; I hope you liked it. See you next time. Happy coding!&lt;/p&gt;
+
+&lt;p&gt;(PS: if you can figure out what Plon is, comment it and if you’re right, I’ll edit this post and you’ll receive a mention)&lt;/p&gt;</content><author><name>Samplasion</name></author><category term="Node" /><category term="JS" /><category term="JavaScript" /><category term="Terminal" /><summary type="html">A CLI program is a quick way of interfacing with the user without the need to create a User Interface. How do we make one with Node?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.renzocappelli.com/wp-content/uploads/2019/06/node.png" /><media:content medium="image" url="https://www.renzocappelli.com/wp-content/uploads/2019/06/node.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Build Jekyll with custom plugins on GitHub Pages</title><link href="https://samplasion.github.io/blog/blog/build-jekyll-with-custom-plugins-on-github-pages" rel="alternate" type="text/html" title="Build Jekyll with custom plugins on GitHub Pages" /><published>2020-06-23T08:00:00+00:00</published><updated>2020-06-23T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/build-jekyll-with-custom-plugins-on-github-pages</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/build-jekyll-with-custom-plugins-on-github-pages">&lt;p&gt;What if I told you there’s a way to bypass GitHub’s Jekyll plugin whitelist limitation, and that it comes directly from GitHub?&lt;/p&gt;
+
+&lt;p&gt;You probably know GitHub pages, and that it only allows for a limited set of plugins. That’s because it has to be dead simple for users to get a website up and running in no time. But what about us who want more flexibility? There’s actually a process that deals with that, which I’m gonna depict.&lt;/p&gt;
+
+&lt;p&gt;First of all, this solution is based on &lt;strong&gt;GitHub Actions&lt;/strong&gt;, their in-house deployment and continuous integration solution. Using it, it’s actually possible to create a virtual container with Jekyll in it.&lt;/p&gt;
+
+&lt;p&gt;It’ll build our site in the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch (so make sure to save anything you need saved) from the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch.&lt;/p&gt;
+
+&lt;p&gt;One advantage of this approach is that you can explore the built site. Of course, don’t modify it because the next time a build is triggered your work will be lost.&lt;/p&gt;
+
+&lt;p&gt;Another advantage is that you can schedule the builds. For example, I set mine at 00:01 UTC and at 08:01 UTC (the “new post” time).&lt;/p&gt;
+
+&lt;p&gt;Another plus is that once you set this up, you’re OK forever. No more configurations. Well, unless you need to touch anything action-wise.&lt;/p&gt;
+
+&lt;p&gt;So, without further ado, let’s start!&lt;/p&gt;
+
+&lt;p&gt;First of all, &lt;a href=&quot;/blog/jekyll-101&quot; title=&quot;Jekyll 101&quot;&gt;create a Jekyll blog&lt;/a&gt; (or have one ready). Make sure it’s in the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch. If not, you can simply rename the branch.&lt;/p&gt;
+
+&lt;p&gt;Then create a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; in the root of your project and paste in the following code:&lt;!-- &amp;#123;% include highlight.html lang=&quot;&quot; code=code host=&quot;XXX&quot; output=&quot;&quot; %} --&gt;&lt;/p&gt;
+
+&lt;pre class=&quot; match-braces language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;source &quot;https://rubygems.org&quot;
+
+gem &quot;jekyll&quot;
+
+group :jekyll_plugins do
+    # Add your plugins here
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where it says &lt;code class=&quot;highlighter-rouge&quot;&gt;# Add your plugins here&lt;/code&gt;, you must add all of the plugins you included in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; in the following format: &lt;code class=&quot;highlighter-rouge&quot;&gt;gem 'plugin-name'&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then, return to the homepage of the repo and switch to the &lt;em&gt;Actions&lt;/em&gt; tab and create a &lt;em&gt;New workflow&lt;/em&gt;. &lt;em&gt;Set up a workflow yourself&lt;/em&gt; and paste in this code:&lt;!-- &amp;#123;% include highlight.html lang=&quot;&quot; code=code host=&quot;XXX&quot; output=&quot;&quot; %} --&gt;&lt;/p&gt;
+
+&lt;pre class=&quot; match-braces language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;
+name: Jekyll Deploy
+
+on:
+  push:
+    branches:
+      - master
+  schedule:    
+      - cron: &quot;0 0 * * *&quot;
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Checkout
+        uses: actions/checkout@v1
+      - name: Bundler Cache
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Build &amp;amp; Deploy to GitHub Pages
+        uses: joshlarsen/jekyll4-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;on.schedule[].cron&lt;/code&gt; key follows a specific syntax that &lt;a href=&quot;https://crontab.guru/&quot;&gt;you can practice on this website&lt;/a&gt; if you need to schedule a build at one or more particular times a day. If you don’t need scheduling, you can delete the &lt;code class=&quot;highlighter-rouge&quot;&gt;on.schedule&lt;/code&gt; key entirely. With the setup I gave you, the action will be triggered &lt;strong&gt;on push&lt;/strong&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;on.push&lt;/code&gt;) and &lt;strong&gt;every day at midnight&lt;/strong&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;on.schedule[].cron&lt;/code&gt;). The name can be whatever you want, but it’s what you’ll see in the push deploy stats.&lt;/p&gt;
+
+&lt;p&gt;Ok, I admit it, I lied; you don’t &lt;em&gt;need&lt;/em&gt; to be on the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch, but it’s already the default, so how bad can it be? The &lt;code class=&quot;highlighter-rouge&quot;&gt;on.push.branches[]&lt;/code&gt; key controls the branches that trigger a build. &lt;strong&gt;DON’T EVER SET THE&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; &lt;strong&gt;BRANCH AS A TRIGGER&lt;/strong&gt; if you don’t want an endless loop!&lt;/p&gt;
+
+&lt;p&gt;Ok, now that you’ve tailored the code to your desires and needs, commit it. In the repo settings, change the &lt;em&gt;Source&lt;/em&gt; of your GitHub Pages site to the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch. Now, I don’t remember if the commit of the workflow triggers the workflow itself, but to be sure, you can make a very minor change and push that, then return to the homepage of your repo. Next to the &lt;em&gt;Last commit&lt;/em&gt; date, there should be a yellow dot. Click that and click &lt;em&gt;Details&lt;/em&gt; next to the name of the workflow (the one you set earlier). Now you can see the progress of the workflow. Once its done, access your published site and see… nothing different!&lt;/p&gt;
+
+&lt;p&gt;That’s because we’ve only triggered a rebuild. But there’s a difference in that you can now use any plugin you want.&lt;/p&gt;
+
+&lt;p&gt;If you think this is a clever workaround that GitHub will patch, think again: &lt;a href=&quot;https://jekyllrb.com/docs/continuous-integration/github-actions/&quot;&gt;the official Jekyll blog posted a similar method&lt;/a&gt;, but it uses a different action, thus requiring slightly different steps (still outlined in that page).&lt;/p&gt;
+
+&lt;p&gt;With this approach come a couple problems though. First of all, the build time is longer (because the container downloads each plugin every time). For example, mine once reached 2 minutes.&lt;/p&gt;
+
+&lt;p&gt;If you use webhooks, you’ll also notice double the &lt;code class=&quot;highlighter-rouge&quot;&gt;push&lt;/code&gt; events, one for &lt;em&gt;your&lt;/em&gt; push and one for the &lt;em&gt;action’s&lt;/em&gt; force-push.&lt;/p&gt;
+
+&lt;p&gt;All in all, I wouldn’t say this isn’t great. It’s still free hosting after all. See you next time, happy blogging!&lt;/p&gt;</content><author><name>Samplasion</name></author><category term="Plugins" /><category term="Free host" /><category term="GitHub" /><category term="Jekyll" /><summary type="html">What if I told you there's a way to bypass GitHub's Jekyll plugin whitelist limitation, and that it comes directly from GitHub?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://samplasion.github.io/blog/blog/assets/uploaded/schermata-2020-06-09-alle-23-32-08.png" /><media:content medium="image" url="https://samplasion.github.io/blog/blog/assets/uploaded/schermata-2020-06-09-alle-23-32-08.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Using Forestry as a CMS for Jekyll</title><link href="https://samplasion.github.io/blog/blog/using-forestry-as-a-cms-for-jekyll" rel="alternate" type="text/html" title="Using Forestry as a CMS for Jekyll" /><published>2020-06-20T08:00:00+00:00</published><updated>2020-06-20T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/using-forestry-as-a-cms-for-jekyll</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/using-forestry-as-a-cms-for-jekyll">&lt;p&gt;Jekyll sure is a wonderful system for quick static sites or personal projects, but I think we can all agree that adding posts is a bit hard for the non-programmers. &lt;strong&gt;No more.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://forestry.io&quot;&gt;Forestry.io&lt;/a&gt; is a free service with paid upgrades that poses itself as the solver of this problem. With it, you can easily manage your pages and posts, with a visually appealing interface and a WYSIWYG&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; editor. Don’t like it? No problem. Click the menu in the upper right corner and select “Raw Editor”.&lt;/p&gt;
+
+&lt;p&gt;What’s even juicier is that you can edit and add posts from mobile without a hassle.&lt;/p&gt;
+
+&lt;p&gt;I know it may seem like I’m sponsoring Forestry, but the truth of the matter is I’m not sponsored &lt;del&gt;though I’m always here &lt;em&gt;cough cough&lt;/em&gt;&lt;/del&gt;. I just fell in love with the idea of having a CMS-like interface to manage my posts from.&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Rettangolare --&gt;
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block&quot; data-ad-client=&quot;ca-pub-2629383633762978&quot; data-ad-slot=&quot;4359021029&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And you can even have a&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/admin&lt;/code&gt; &lt;strong&gt;endpoint.&lt;/strong&gt; Or anything you want to name it (as long, of course, that it doesn’t overlap with some other name). That alone is something I love.&lt;/p&gt;
+
+&lt;p&gt;The interface sports a simple, customizable sidebar, so you can access your data easily. Here’s how I organized mine, for example:&lt;/p&gt;
+
+&lt;!-- 1: ; 2:  --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/uploaded/schermata-2020-06-10-alle-11-11-04.png&quot; alt=&quot;&quot; srcset=&quot;    &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can generate Front Matter templates to use in pages and/or posts in the appripriately named &lt;em&gt;Front matter&lt;/em&gt; section. In it, you can add endless templates, so that, when you create a post, you can switch templates to choose the one that most adapts to what you need.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;em&gt;Media&lt;/em&gt; section, you can add images and videos that will be uploaded to a custom location that’s chosen in the setup. My custom location is &lt;code class=&quot;highlighter-rouge&quot;&gt;/assets/uploads&lt;/code&gt;, to differentiate uploads from Forestry vs. theme assets.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Menus&lt;/em&gt; section only work if you have the &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-menus&lt;/code&gt; plugin (which I do), which can be disappointing if you already have a custom menu system or if you’re on GitHub pages (but &lt;strong&gt;there’s a workaraund&lt;/strong&gt; which I’m gonna explain in the next post).&lt;/p&gt;
+
+&lt;p&gt;Ultimately, this can be great if you’re used to Ghost, Wordpress and other CMS with a graphical editor, and its moderate flexibility allows for in-depth content management.&lt;/p&gt;
+
+&lt;p&gt;See you next time. Happy blogging!&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;What You See Is What You Get is a type of editor that shows styles as they would appear on a page, rather than showing markup tags. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Samplasion</name></author><category term="Web" /><category term="GitHub" /><category term="HTML" /><category term="HyperText Markup Language" /><summary type="html">Jekyll sure is a wonderful system for quick static sites or personal projects, but I think we can all agree that adding posts is a bit hard for the non-programmers. No more, with Forestry.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" /><media:content medium="image" url="https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jekyll 101</title><link href="https://samplasion.github.io/blog/blog/jekyll-101" rel="alternate" type="text/html" title="Jekyll 101" /><published>2020-06-18T08:00:00+00:00</published><updated>2020-06-18T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/jekyll-101</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/jekyll-101">&lt;p&gt;Jekyll is a useful system for templates and blog posts that works for static sites. You can use this “little” (lol) page to kickstart yourself and, who knows, create the next successful blog. Don’t be scared by the length of this post, you’ll breeze through it.&lt;/p&gt;
+
+&lt;p&gt;First of all, create a file named &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. This is a configuration file that, well, uses the YAML syntax. If you’re not familiar with it, I suggest reading &lt;a href=&quot;https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html&quot;&gt;this document&lt;/a&gt;. Anyway, add a &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file and add a &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; field. You can give it whatever name you want, just make sure it’s what you want the site to be named. Don’t worry, if you change your mind, you can always come back to it anytime.&lt;/p&gt;
+
+&lt;p&gt;You can obviously add other site configuration values. To see a complete list, refer to &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;this document by the Jekyll team&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Obviously, one of the stronger forces of Jekyll is the ability to decrease duplicate code (and consequently typos) by allowing one to create layouts. To create a layout, create a directory &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt; next to the config file, and inside, add an &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; file. The contents of this file are what is repeated for each page that uses this layout (more on that later).&lt;/p&gt;
+
+&lt;p&gt;Obviously, one of the stronger forces of Jekyll is the ability to decrease duplicate code (and consequently typos) by allowing one to create layouts. To create a layout, create a directory &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt; next to the config file, and inside, add an &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; file. The contents of this file are what is repeated for each page that uses this layout (more on that later).&lt;/p&gt;
+
+&lt;p&gt;A very basic example &lt;code class=&quot;highlighter-rouge&quot;&gt;default&lt;/code&gt; layout can be:&lt;/p&gt;
+
+&lt;p&gt;&lt;!-- &amp;#123;% include highlight.html lang=&quot;&quot; code=code host=&quot;XXX&quot; output=&quot;&quot; %} --&gt;&lt;/p&gt;
+
+&lt;pre class=&quot; match-braces language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;{{ page.title }}&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    {{ content }}
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice the &lt;a href=&quot;https://jekyllrb.com/docs/liquid/&quot;&gt;Liquid variable&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt;. That’s the content of the page that uses the layout. A really cool thing you can do is nest layouts. What do I mean? Simple: Maybe you have a template you use for the outer page and a template you use for the content part. You can add a &lt;a href=&quot;#front-matter&quot;&gt;front matter&lt;/a&gt; to the content layout with a &lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; variable that points to the outer page template (&lt;code class=&quot;highlighter-rouge&quot;&gt;default&lt;/code&gt; in this fictitious example). That way, you’ll have your content, inside a layout, inside a layout.&lt;/p&gt;
+
+&lt;p&gt;But Liquid tags can also have modifiers. For example, you can format a &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt; using &lt;code class=&quot;highlighter-rouge&quot;&gt;06/18/2020&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To add posts, simply add a &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. To add a post, add a Markdown or HTML file in that directory, then add a front matter. The file should be named in this format: &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-title.ext&lt;/code&gt;. For example, this post would be named &lt;code class=&quot;highlighter-rouge&quot;&gt;2020-06-20-jekyll-101.md&lt;/code&gt; (assuming a Markdown format, which I use). To use a particular permalink, add a &lt;code class=&quot;highlighter-rouge&quot;&gt;permalink&lt;/code&gt; variable to the front matter with the new permalink you want the page or post to be accessible from.&lt;/p&gt;
+
+&lt;p&gt;The front matter is the “block” enclosed in &lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt; that sits at the top of every file or so. It can include the title, date of publication, permalink, the layout, or other variables that you can access fron the layouts by using &lt;code class=&quot;highlighter-rouge&quot;&gt;(where the context is where the front matter is located. For example, a front matter variable in the layout can be accessed with&lt;/code&gt;. Likewise, a page/post variable can be accessed using ``). You can also add custom variables that you can access fron the context. For example, you can add a &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt; variable that you can then add to the body from the layout. You can add a front matter to almost everything, to pages, posts and even layouts so you can nest them.&lt;/p&gt;
+
+&lt;p&gt;To publish a website to Jekyll and Github Pages, all you need is a &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;, a &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; layout file and an &lt;code class=&quot;highlighter-rouge&quot;&gt;index.md&lt;/code&gt;. You can see a live version &lt;a href=&quot;https://samplasion.github.io/gh-test&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For today’s tutorial it’s all, I hope to see you soon. Happy blogging!&lt;/p&gt;</content><author><name>Samplasion</name></author><category term="Web" /><category term="GitHub" /><category term="HTML" /><category term="HyperText Markup Language" /><summary type="html">Everything you need to know if you're in the process of converting your static HTML site to Jekyll.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" /><media:content medium="image" url="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Google forced to show Search Engine selection screen</title><link href="https://samplasion.github.io/blog/blog/google-forced-to-show-search-engine-selection-screen" rel="alternate" type="text/html" title="Google forced to show Search Engine selection screen" /><published>2020-06-16T08:00:00+00:00</published><updated>2020-06-16T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/google-forced-to-show-search-engine-selection-screen</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/google-forced-to-show-search-engine-selection-screen">&lt;p&gt;Google finalized the choice screen. Don’t know what I’m talking about? From this summer, you’ll be presented with a search engine choice screen.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s a simple screen. Four icons: Google, and three others (probably Google will be preselected). The other engines will vary from nation to nation.&lt;/p&gt;
+
+&lt;p&gt;Why was this done, you may ask? Because the European Commission fined Google for more than &lt;strong&gt;4 billion Euros&lt;/strong&gt; for violating the antitrust rules, because Google used its dominance in the mobile market to push Google searches (and Chrome) forward.&lt;/p&gt;
+
+&lt;p&gt;Instead, now a menu will let you make your choice and download the respective app of the search engine you prefer.&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Rettangolare --&gt;
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block&quot; data-ad-client=&quot;ca-pub-2629383633762978&quot; data-ad-slot=&quot;4359021029&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a big step forward, but there’s still a catch. Thought Google would let other search engines roam free in its Operating System? Think again.&lt;/p&gt;
+
+&lt;p&gt;Google’s solution is an auction. Yeah, an auction. To even get a chance to appear alongside Google, search engines have to play in what’s basically a pay-to-play tournament, where only the 3 highest bidders enter the choice screen.&lt;/p&gt;
+
+&lt;p&gt;According to DuckDuckGo’s CEO and Founder, Gabriel Weinberg, “you’re incentivized to win your profit”.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Google is taking away all the profit of these search engines and profiting from it themselves. […] They’re effectively running other people’s search and taking other people’s profit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And that’s basically what’s going on here. Google’s using the excuse of the auction to still earn from searches, even if the engine is not its own.&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Rettangolare --&gt;
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block&quot; data-ad-client=&quot;ca-pub-2629383633762978&quot; data-ad-slot=&quot;4359021029&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Ecosia’s CEO, Christian Kroll, says he doesn’t think his engine will win because most of the profit is spent planting trees.&lt;/p&gt;
+
+&lt;p&gt;DuckDuckGo, on the other hand, argues the process is flawed. They say - and I think it’s the best option - the choice screen should contain far more than only 4 options - and I add that the list should be presented in &lt;strong&gt;alphabetical&lt;/strong&gt; order, with &lt;strong&gt;no preselection&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Paul Gennai, a product management director at Google, says that Android has “created more choice for everyone, not less” and that the operating system’s openness has meant “developers of apps that compete against Google have precisely the same ability to reach users”.&lt;/p&gt;
+
+&lt;p&gt;He says Android openness has taken “billions of dollars of investment over more than ten years”, resulting in “an auction [system] to ensure that it would continue to be viable for Google to continue its investments in the open Android ecosystem”.&lt;/p&gt;
+
+&lt;p&gt;All this stuff aside, some wonder if it’s even going to make a difference at all.&lt;/p&gt;
+
+&lt;p&gt;Microsoft did &lt;a href=&quot;https://en.wikipedia.org/wiki/BrowserChoice.eu&quot;&gt;something similar&lt;/a&gt; in 2010, and it did nothing more than boost the newborn Chrome a little (it was gaining popularity anyway).&lt;/p&gt;
+
+&lt;p&gt;In its own tests, DuckDuckGo created a choice screen with 18 different options and found that people still scrolled all the way to the bottom to find the one they were most familiar with.&lt;/p&gt;
+
+&lt;p&gt;Anyway… it seems like Google has found its own method of lawfully doing what it wants.&lt;/p&gt;
+
+&lt;p&gt;It’s all from today’s post; see you next time. Happy searching!&lt;/p&gt;</content><author><name>Samplasion</name></author><summary type="html">Google finalized the choice screen. Don’t know what I’m talking about? From this summer, you’ll be presented with a search engine choice screen.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb" /><media:content medium="image" url="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">CSS: Why is dark grey lighter than regular grey?</title><link href="https://samplasion.github.io/blog/blog/css-why-is-dark-grey-lighter-than-regular-grey" rel="alternate" type="text/html" title="CSS: Why is dark grey lighter than regular grey?" /><published>2020-06-13T08:00:00+00:00</published><updated>2020-06-13T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/css-why-is-dark-grey-lighter-than-regular-grey</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/css-why-is-dark-grey-lighter-than-regular-grey">&lt;!--kg-card-begin: html--&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;It's not easy to notice. Heck, I didn't even notice it until I read about it on Reddit. So what's the matter?&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:more --&gt;
+&lt;!--more--&gt;
+&lt;!-- /wp:more --&gt;
+
+&lt;!-- wp:html --&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;414&quot; data-theme-id=&quot;dark&quot; data-default-tab=&quot;result&quot; data-user=&quot;samplasion&quot; data-slug-hash=&quot;MWaLROv&quot; style=&quot;height: 414px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Grey vs Dark Grey&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/samplasion/pen/MWaLROv&quot;&gt;
+  Grey vs Dark Grey&lt;/a&gt; by samplasion (&lt;a href=&quot;https://codepen.io/samplasion&quot;&gt;@samplasion&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;!-- /wp:html --&gt;&lt;/p&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This pen right here is a tangible example of what I mean. We can see that the &lt;code&gt;div&lt;/code&gt; with class &lt;code&gt;darkgrey&lt;/code&gt; &lt;span class=&quot;colorpreview&quot; style=&quot;background-color:darkgrey&quot;&gt;&lt;/span&gt; has a lighter background than the &lt;code&gt;div&lt;/code&gt; with class &lt;code&gt;grey&lt;/code&gt;.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This is actually a remnant of the old web. Before the World Wide Web Consortium (W3C) existed, every browser had to implement its own way of rendering webpages. The biggest browser at the time was &lt;a rel=&quot;noreferrer noopener&quot; href=&quot;https://en.wikipedia.org/wiki/Netscape_Navigator&quot; target=&quot;_blank&quot;&gt;Netscape Navigator&lt;/a&gt;, which, in the first versions, used the X window system on UNIX. The X window system has a set of colors, that includes a &lt;code&gt;grey&lt;/code&gt; and a &lt;code&gt;dark grey&lt;/code&gt;, respectively indicating 75% and 66% grey values.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;When the W3C went and merged the X11 palette into the new specification, there was a class between their &lt;code&gt;grey&lt;/code&gt; and X11's &lt;code&gt;grey&lt;/code&gt;. They eventually settled for the consortium's &lt;code&gt;grey&lt;/code&gt; which was (and still is) a 50% grey &lt;code&gt;(128, 128, 128)&lt;/code&gt;. The &lt;code&gt;darkgrey&lt;/code&gt;, on the other hand, wasn't present and was imported as is.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;See where the problem is? At that point in time, the specification included a &lt;code&gt;grey&lt;/code&gt; at 50% and a &lt;code&gt;darkgrey&lt;/code&gt; at 66% carrying on until now. Even the CSS4 draft still uses these values.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Of course, this applies to all the JavaScript methods and properties that interface with colors (for example, canvas).&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This was a brief showcase at the history behind this weird CSS bit, and I hope you enjoyed it. Stay safe!&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+&lt;!--kg-card-end: html--&gt;</content><author><name>Samplasion</name></author><category term="CSS" /><category term="JS" /><category term="JavaScript" /><category term="Cascading Style Sheets" /><category term="HTML" /><category term="HyperText Markup Language" /><summary type="html">It's not easy to notice. Heck, I didn't even notice it until I read about it on Reddit. So what's the matter?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1565300667498-2843c56b4603?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" /><media:content medium="image" url="https://images.unsplash.com/photo-1565300667498-2843c56b4603?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What was announced during the PS5 reveal event</title><link href="https://samplasion.github.io/blog/blog/what-was-announced-during-the-ps5-reveal-event" rel="alternate" type="text/html" title="What was announced during the PS5 reveal event" /><published>2020-06-12T08:00:00+00:00</published><updated>2020-06-12T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/what-was-announced-during-the-ps5-reveal-event</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/what-was-announced-during-the-ps5-reveal-event">&lt;p&gt;It’s currently 09:30PM UTC of June 11 when I’m writing this and Sony’s PS5 conference is over. Maybe you missed it, and want to know what was announced. Worry not, I’ve got you covered!&lt;/p&gt;
+
+&lt;h3 class=&quot;title is-3&quot;&gt;Games&lt;/h3&gt;
+
+&lt;p&gt;These are the games that were announced:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Horizon 2: Forbidden West&lt;/li&gt;
+  &lt;li&gt;Marvel’s Spider-Man: Miles Morales&lt;/li&gt;
+  &lt;li&gt;Resident Evil 8: Village&lt;/li&gt;
+  &lt;li&gt;Gran Turismo 7&lt;/li&gt;
+  &lt;li&gt;Ratchet and Clank: Rift Apart&lt;/li&gt;
+  &lt;li&gt;Demon’s Souls Remake&lt;/li&gt;
+  &lt;li&gt;Death Loop&lt;/li&gt;
+  &lt;li&gt;NBA 2K21 Coming Fall 2020&lt;/li&gt;
+  &lt;li&gt;Sackboy: A Big Adventure&lt;/li&gt;
+  &lt;li&gt;Hitman 3&lt;/li&gt;
+  &lt;li&gt;GhostWire: Tokyo PS5&lt;/li&gt;
+  &lt;li&gt;Godfall&lt;/li&gt;
+  &lt;li&gt;Pragmata&lt;/li&gt;
+  &lt;li&gt;Astro’s Playroom&lt;/li&gt;
+  &lt;li&gt;Oddworld: Soulstorm&lt;/li&gt;
+  &lt;li&gt;Returnal&lt;/li&gt;
+  &lt;li&gt;Destruction All-Stars&lt;/li&gt;
+  &lt;li&gt;Project Athia&lt;/li&gt;
+  &lt;li&gt;Stray&lt;/li&gt;
+  &lt;li&gt;Kena: Bridge of Spirits&lt;/li&gt;
+  &lt;li&gt;Goodbye Volcano High&lt;/li&gt;
+  &lt;li&gt;Jett: The Far Shore&lt;/li&gt;
+  &lt;li&gt;Solar Ash Revealed&lt;/li&gt;
+  &lt;li&gt;Little Devil Inside&lt;/li&gt;
+  &lt;li&gt;BugSnax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As you can see, we’ve got some big titles coming, as well as smaller ones.&lt;/p&gt;
+
+&lt;h3 class=&quot;title is-3&quot;&gt;Design&lt;/h3&gt;
+
+&lt;p&gt;The new console sports a design that, in my honest opinion, looks like a sci-fi Wi-Fi router positioned sideways. Obviously, that’s my view, but nonetheless, this new console, only white for the time being, has a new, fluid design, highly contrasting with the squarish design of its predecessor.&lt;/p&gt;
+
+&lt;!-- 1: ; 2:  --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/uploaded/screen-shot-2020-06-11-at-4-12-14-pm.png&quot; alt=&quot;&quot; srcset=&quot;            /assets/resized/240/screen-shot-2020-06-11-at-4-12-14-pm.png 240w,            /assets/resized/480/screen-shot-2020-06-11-at-4-12-14-pm.png 480w,            /assets/resized/640/screen-shot-2020-06-11-at-4-12-14-pm.png 640w,            /assets/resized/1280/screen-shot-2020-06-11-at-4-12-14-pm.png 1280w,    &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, Sony planned 2 models to come out this year. The usual disc model - a standard edition with a 4K Blu-Ray disc drive - is accompanied by a new disc-less “Digital Edition”, the budget model, akin to the PS4 Slim (except it has no disc reader).&lt;/p&gt;
+
+&lt;p&gt;Both models sport a “super-fast SSD”, which is an improvement against the Hard Disk the old model had.&lt;/p&gt;
+
+&lt;p&gt;Aside for being the optimal spot for dust, the PlayStation 5’s white finish is most likely the only color we’ll see in a while.&lt;/p&gt;
+
+&lt;h3 class=&quot;title is-3&quot;&gt;Accessories&lt;/h3&gt;
+
+&lt;p&gt;Sony revealed a plethora of accessories to the console. Namely:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DualSense Charging Station&lt;/li&gt;
+  &lt;li&gt;HD Camera&lt;/li&gt;
+  &lt;li&gt;Pulse 3D Wireless Headset&lt;/li&gt;
+  &lt;li&gt;Media Remote&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here’s the complete line-up:&lt;/p&gt;
+
+&lt;!-- 1: ; 2:  --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/uploaded/ps5-lineup.jpg&quot; alt=&quot;&quot; srcset=&quot;            /assets/resized/240/ps5-lineup.jpg 240w,            /assets/resized/480/ps5-lineup.jpg 480w,            /assets/resized/640/ps5-lineup.jpg 640w,    &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It seems to me like they’re trying to appeal to everyone with this.&lt;/p&gt;
+
+&lt;p&gt;Watch the official unveil animation:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/RkC0l4iekYo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;By the way, the DualSense has a USB-C connector:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/SebzB8W3bVU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Sony has &lt;a href=&quot;https://blog.us.playstation.com/2019/10/08/an-update-on-next-gen-playstation-5-launches-holiday-2020/&quot;&gt;officially confirmed&lt;/a&gt; that the PS5 will release globally “in time for Holiday 2020”, making it the perfect gift for your beloved children.&lt;/p&gt;
+
+&lt;p&gt;Anyway, jokes aside, it’s all from me on this extraordinary day. Happy future gaming!&lt;/p&gt;</content><author><name>Samplasion</name></author><category term="Sony" /><category term="PlayStation" /><category term="PS5" /><category term="Reveal" /><category term="Live Streaming" /><summary type="html">Maybe you missed Sony's PS5 conference, and want to know what was announced. Worry not, I've got you covered!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://samplasion.github.io/blog/blog/assets/uploaded/schermata-2020-06-12-alle-09-26-18.png" /><media:content medium="image" url="https://samplasion.github.io/blog/blog/assets/uploaded/schermata-2020-06-12-alle-09-26-18.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">CSS: What’s the difference between em and rem?</title><link href="https://samplasion.github.io/blog/blog/css-whats-the-difference-between-em-and-rem" rel="alternate" type="text/html" title="CSS: What’s the difference between em and rem?" /><published>2020-06-06T08:00:00+00:00</published><updated>2020-06-06T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/css-whats-the-difference-between-em-and-rem</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/css-whats-the-difference-between-em-and-rem">&lt;p&gt;If you have tried working with CSS, you'll have noticed two special units: &lt;code&gt;em&lt;/code&gt; and &lt;code&gt;rem&lt;/code&gt;. If you compute one of each on a blank HTML page, they compile the same — so what's the difference?&lt;/p&gt;
+&lt;p&gt;First of all, &lt;code&gt;em&lt;/code&gt; and &lt;code&gt;rem&lt;/code&gt; are dynamic units. They scale depending on the font size. In fact, in a standard HTML page, where the default font size is 16px, &lt;code&gt;1em&lt;/code&gt; and &lt;code&gt;1rem&lt;/code&gt; both compile to 16px.&lt;/p&gt;
+&lt;p&gt;The difference lies in that little &quot;r&quot;: it stands for &lt;code&gt;root&lt;/code&gt;. The practical difference is that while &lt;code&gt;em&lt;/code&gt; compiles to &lt;code&gt;px&lt;/code&gt; using the element's &lt;code&gt;font-size&lt;/code&gt; (or the inherited one), &lt;code&gt;rem&lt;/code&gt; uses the one in the root element (&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;). It's also important to mention that &lt;code&gt;rem&lt;/code&gt;s are just a CSS3 thing; they don't exist in previous versions.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;em&lt;/code&gt; refers to &quot;the width of the letter M&quot; because before the computer era, press typefaces usually made the uppercase M to be a &quot;block&quot; wide. Nowadays, the letter M is usually narrower than 1 em, but the terminology stayed.&lt;/p&gt;
+&lt;!--kg-card-begin: html--&gt;
+&lt;figure&gt;&lt;blockquote cite=&quot;https://en.wikipedia.org/wiki/Em_(typography)#History&quot;&gt;One em was traditionally defined as the width of the capital &lt;em&gt;M&lt;/em&gt; in the current typeface and point size, because the &lt;em&gt;M&lt;/em&gt; was commonly cast the full-width of the square &lt;em&gt;blocks&lt;/em&gt;, or &lt;em&gt;em-quads&lt;/em&gt; (also &lt;em&gt;mutton-quads&lt;/em&gt;), which are used in printing presses.&lt;br /&gt;&lt;br /&gt;In modern typefaces, the character M is usually somewhat less than one em wide.&lt;/blockquote&gt;&lt;figcaption&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Em_(typography)#History&quot;&gt;Wikipedia&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!--kg-card-end: html--&gt;
+&lt;p&gt;But why use &lt;code&gt;em&lt;/code&gt; and &lt;code&gt;rem&lt;/code&gt;? Because the content should adjust to the size of the device, it is important that your font adjusts too.&lt;/p&gt;
+&lt;p&gt;You've gotta be careful with &lt;code&gt;em&lt;/code&gt; though. Take this example:&lt;/p&gt;
+&lt;figure class=&quot;kg-card kg-embed-card&quot;&gt;&lt;iframe id=&quot;cp_embed_dyYaQZJ&quot; src=&quot;https://codepen.io/samplasion/embed/preview/dyYaQZJ?height=300&amp;amp;slug-hash=dyYaQZJ&amp;amp;default-tabs=html,result&amp;amp;host=https://codepen.io&quot; title=&quot;&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; height=&quot;300&quot; allowtransparency=&quot;true&quot; class=&quot;cp_embed_iframe&quot; style=&quot;width: 100%; overflow: hidden;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;
+&lt;p&gt;Even though you set the &lt;code&gt;font-size&lt;/code&gt; on the &lt;code&gt;p&lt;/code&gt; element to &lt;code&gt;1em&lt;/code&gt;, it inherited the &lt;code&gt;div&lt;/code&gt;'s &lt;code&gt;2rem&lt;/code&gt; &lt;code&gt;font-size&lt;/code&gt; and used it to calculate its own &lt;code&gt;1em&lt;/code&gt; &lt;code&gt;font-size&lt;/code&gt;, resulting in 16px * 2rem * 1em = 32px. Had we used &lt;code&gt;1rem&lt;/code&gt; on it instead, it would've been half the size:&lt;/p&gt;
+&lt;figure class=&quot;kg-card kg-embed-card&quot;&gt;&lt;iframe id=&quot;cp_embed_jObdQXP&quot; src=&quot;https://codepen.io/samplasion/embed/preview/jObdQXP?height=300&amp;amp;slug-hash=jObdQXP&amp;amp;default-tabs=html,result&amp;amp;host=https://codepen.io&quot; title=&quot;Em vs rem pt 2&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; height=&quot;300&quot; allowtransparency=&quot;true&quot; class=&quot;cp_embed_iframe&quot; style=&quot;width: 100%; overflow: hidden;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;
+&lt;p&gt;Alright, that's it for today's story. Happy programming!&lt;/p&gt;</content><author><name>Samplasion</name></author><category term="Cascading Style Sheets" /><category term="CSS" /><category term="HTML" /><category term="HyperText Markup Language" /><summary type="html">If you have tried working with CSS, you'll have noticed two special units: em and rem — but what's the difference?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" /><media:content medium="image" url="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to install developer tools on Mac without Xcode</title><link href="https://samplasion.github.io/blog/blog/how-to-install-developer-tools-on-mac-without-xcode" rel="alternate" type="text/html" title="How to install developer tools on Mac without Xcode" /><published>2020-05-30T08:00:00+00:00</published><updated>2020-05-30T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/how-to-install-developer-tools-on-mac-without-xcode</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/how-to-install-developer-tools-on-mac-without-xcode">&lt;p&gt;I’ve mentioned it multiple times in previous posts, but I feel like writing this post so I can just link to it when needed.&lt;/p&gt;
+
+&lt;p&gt;What are developer tools? Developer tools are a collection of commands (more than 50) that are commonly used by developers, such as &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;svn&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;perl&lt;/code&gt; and other similar commands.&lt;/p&gt;
+
+&lt;p&gt;To install them, run:&lt;/p&gt;
+
+&lt;!-- &amp;#123;% include highlight.html lang=&quot;&quot; code=code host=&quot;XXX&quot; output=&quot;&quot; %} --&gt;
+
+&lt;pre class=&quot;command-line  match-braces language-bash&quot; data-host=&quot;Users-Mac&quot; data-output=&quot;2&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;
+xcode-select --install  
+xcode-select: note: install requested for command line tools&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A new window should appear. Click on the &lt;strong&gt;Install&lt;/strong&gt; button and wait for it to finish installing.&lt;/p&gt;
+
+&lt;p&gt;Now, when you run that command again, you’ll get this:&lt;/p&gt;
+
+&lt;!-- &amp;#123;% include highlight.html lang=&quot;&quot; code=code host=&quot;XXX&quot; output=&quot;&quot; %} --&gt;
+
+&lt;pre class=&quot;command-line  match-braces language-bash&quot; data-host=&quot;Users-Mac&quot; data-output=&quot;2&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;
+xcode-select --install
+xcode-select: error: command line tools are already installed, use &quot;Software Update&quot; to install updates&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That means they were successfully installed.&lt;/p&gt;
+
+&lt;p&gt;That’s really it! If you were following a guide, &lt;a href=&quot;javascript:window.go(-1)&quot;&gt;click here to go back&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tell me what you think in the comments, and as always, stay safe!&lt;/p&gt;</content><author><name>Samplasion</name></author><category term="Apple" /><category term="Computer" /><category term="Mac" /><category term="Tools" /><category term="Tutorial" /><summary type="html">See how you can download the Developer Tools without downloading 2+ GB of Xcode.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" /><media:content medium="image" url="https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use a custom visual as a camera on Zoom and other services (aka: use OBS on Zoom and others)</title><link href="https://samplasion.github.io/blog/blog/use-a-custom-visual-as-a-camera-on-zoom-or-use-obs-on-zoom" rel="alternate" type="text/html" title="Use a custom visual as a camera on Zoom and other services (aka: use OBS on Zoom and others)" /><published>2020-05-23T08:00:00+00:00</published><updated>2020-05-23T08:00:00+00:00</updated><id>https://samplasion.github.io/blog/blog/use-a-custom-visual-as-a-camera-on-zoom-or-use-obs-on-zoom</id><content type="html" xml:base="https://samplasion.github.io/blog/blog/use-a-custom-visual-as-a-camera-on-zoom-or-use-obs-on-zoom">&lt;p&gt;If you're here, you're looking for a way to pretend you're listening to your teacher while you're not (if you know what I mean :smirk:), or maybe you want to apply all kinds of weird effects to your video, or maybe you don't even have a camera but you want to make your rectangle a little more interesting. Well, you're in the right place.&lt;/p&gt;
+&lt;p&gt;So first of all, you'll have to &lt;a href=&quot;https://obsproject.com/download&quot;&gt;download OBS&lt;/a&gt;. We'll use this to set up a virtual camera that'll show custom visuals. Once you've downloaded it, set it up (don't worry if it asks for Twitch details, just close out of that window). Once you've done that, you'll also have to download the Virtual Camera plugin (&lt;a href=&quot;https://github.com/Fenrirthviti/obs-virtual-cam/releases&quot;&gt;Windows&lt;/a&gt;, &lt;a href=&quot;https://github.com/johnboiles/obs-mac-virtualcam&quot;&gt;Mac&lt;/a&gt;, &lt;a href=&quot;https://github.com/CatxFish/obs-v4l2sink&quot;&gt;Linux&lt;/a&gt;, platform-specific installation instructions are within each link).&lt;/p&gt;
+&lt;p&gt;Once you've done that, restart OBS studio and go to Tools -&amp;gt; Start VirtualCam (The name may vary depending on the system). Then, go into Zoom's settings -&amp;gt; Video and choose the virtual OBS camera. If you can't see it on Mac, run:&lt;/p&gt;
+&lt;!--kg-card-begin: markdown--&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ xcode-select --install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!--kg-card-end: markdown--&gt;
+&lt;p&gt;Once that's done installing, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ sudo codesign --remove-signature /Applications/zoom.us.app&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Keep in mind this only works if you have admin privileges.&lt;/p&gt;
+&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;&lt;img src=&quot;/blog/assets/images/2020/05/Schermata-2020-05-20-alle-16.35.27.png&quot; class=&quot;kg-image&quot; /&gt;&lt;figcaption&gt;Select the camera named &quot;OBS&quot;.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Anyway, once you've run that, close and reopen Zoom and you should see the virtual camera in the Video settings.&lt;/p&gt;
+&lt;p&gt;Congratulations. You've now set up a virtual camera that you can customize.&lt;br /&gt;Everything works as expected: transitions, scenes, etc. but that's not something to be amazed about, because it's just like a Twitch stream; OBS was made for that.&lt;/p&gt;
+&lt;figure class=&quot;kg-card kg-gallery-card kg-width-wide kg-card-hascaption&quot;&gt;&lt;div class=&quot;gallery&quot;&gt;&lt;img src=&quot;/blog/assets/images/2020/05/Schermata-2020-05-20-alle-16.42.30.png&quot; width=&quot;2560&quot; height=&quot;1600&quot; /&gt;&lt;img src=&quot;/blog/assets/images/2020/05/Schermata-2020-05-20-alle-16.42.52.png&quot; width=&quot;1692&quot; height=&quot;1412&quot; /&gt;&lt;/div&gt;&lt;figcaption&gt;The changes are reflected to Zoom.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;bonus-snap-camera&quot;&gt;Bonus: Snap Camera&lt;/h3&gt;
+&lt;p&gt;If you have a camera, you can download Snap Camera. It works just like you'd expect: it applies one of Snapchat's many filters to your webcam and it can be used as a virtual camera. Awesome, right? But, to not have to always go into the settings and change the input, we can link Snap Camera to OBS. How do we do that?&lt;/p&gt;
+&lt;p&gt;In your scene, add a new image capture source that points to snap camera instead of your real one. That's it.&lt;/p&gt;
+&lt;h3 id=&quot;bonus-google-meet&quot;&gt;Bonus: Google Meet&lt;/h3&gt;
+&lt;p&gt;Yeah, you read it right: you can also use this method to stream personalized content to your Google meetings.&lt;/p&gt;
+&lt;!--kg-card-begin: html--&gt;
+&lt;!--style=&quot;text-align:left; border-left: 2.5px solid #c44040;&quot;--&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+  &lt;strong&gt;Important Notice&lt;/strong&gt;: I've tested this method on both Chrome and Firefox, and it seems as though it only wants to work on Chrome. YMMV.
+&lt;/div&gt;
+&lt;!--kg-card-end: html--&gt;
+&lt;p&gt;This one is really simple. When your browser asks you which camera to pass to the website, accept but immediately go into the settings and change the camera in the video tab to the &quot;OBS&quot; one. You'll see it mirrored, but others will see it just fine.&lt;/p&gt;
+&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;&lt;img src=&quot;/blog/assets/images/2020/05/Schermata-2020-05-20-alle-23.23.59.png&quot; class=&quot;kg-image&quot; /&gt;&lt;figcaption&gt;It'll come up with the same name as above&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Alright, that's all for today. Tell me if you're gonna use this trick to sneak out during your #WorkFromHome sessions. Stay safe!&lt;/p&gt;</content><author><name>Samplasion</name></author><category term="Computer" /><category term="Hack" /><category term="Mac" /><category term="PC" /><category term="Tools" /><category term="Tutorial" /><category term="Zoom" /><category term="Trick" /><summary type="html">If you're here, you're looking for a way to pretend you're listening to your teacher while you're not. Well, you're in the right place.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1586980368323-8ce5db4c85ce?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" /><media:content medium="image" url="https://images.unsplash.com/photo-1586980368323-8ce5db4c85ce?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

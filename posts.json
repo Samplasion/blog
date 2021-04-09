@@ -1,0 +1,303 @@
+[
+  
+    {
+      "title"    : "Creating CLI programs with Node.js",
+      "category" : "Node",
+      "tags"     : "Node, JS, JavaScript, Terminal",
+      "url"      : "/blog/creating-cli-programs-with-node",
+      "date"     : "2020-06-25 08:00:00 +0000",
+      "excerpt"  : "<p>A CLI program is a quick way of interfacing with the user without the need to create a User Interface. How do we make one with Node?</p>
+"
+    },
+  
+    {
+      "title"    : "Build Jekyll with custom plugins on GitHub Pages",
+      "category" : "Plugins",
+      "tags"     : "Plugins, Free host, GitHub, Jekyll",
+      "url"      : "/blog/build-jekyll-with-custom-plugins-on-github-pages",
+      "date"     : "2020-06-23 08:00:00 +0000",
+      "excerpt"  : "What if I told you there's a way to bypass GitHub's Jekyll plugin whitelist limitation, and that it comes directly from GitHub?"
+    },
+  
+    {
+      "title"    : "Using Forestry as a CMS for Jekyll",
+      "category" : "Web",
+      "tags"     : "Web, GitHub, HTML, HyperText Markup Language",
+      "url"      : "/blog/using-forestry-as-a-cms-for-jekyll",
+      "date"     : "2020-06-20 08:00:00 +0000",
+      "excerpt"  : "Jekyll sure is a wonderful system for quick static sites or personal projects, but I think we can all agree that adding posts is a bit hard for the non-programmers. No more, with Forestry."
+    },
+  
+    {
+      "title"    : "Jekyll 101",
+      "category" : "Web",
+      "tags"     : "Web, GitHub, HTML, HyperText Markup Language",
+      "url"      : "/blog/jekyll-101",
+      "date"     : "2020-06-18 08:00:00 +0000",
+      "excerpt"  : "Everything you need to know if you're in the process of converting your static HTML site to Jekyll."
+    },
+  
+    {
+      "title"    : "Google forced to show Search Engine selection screen",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/blog/google-forced-to-show-search-engine-selection-screen",
+      "date"     : "2020-06-16 08:00:00 +0000",
+      "excerpt"  : "<p>Google finalized the choice screen. Don’t know what I’m talking about? From this summer, you’ll be presented with a search engine choice screen.
+<!--more--></p>
+"
+    },
+  
+    {
+      "title"    : "CSS: Why is dark grey lighter than regular grey?",
+      "category" : "CSS",
+      "tags"     : "CSS, JS, JavaScript, Cascading Style Sheets, HTML, HyperText Markup Language",
+      "url"      : "/blog/css-why-is-dark-grey-lighter-than-regular-grey",
+      "date"     : "2020-06-13 08:00:00 +0000",
+      "excerpt"  : "It's not easy to notice. Heck, I didn't even notice it until I read about it on Reddit. So what's the matter?"
+    },
+  
+    {
+      "title"    : "What was announced during the PS5 reveal event",
+      "category" : "Sony",
+      "tags"     : "Sony, PlayStation, PS5, Reveal, Live Streaming",
+      "url"      : "/blog/what-was-announced-during-the-ps5-reveal-event",
+      "date"     : "2020-06-12 08:00:00 +0000",
+      "excerpt"  : "Maybe you missed Sony's PS5 conference, and want to know what was announced. Worry not, I've got you covered!"
+    },
+  
+    {
+      "title"    : "CSS: What’s the difference between em and rem?",
+      "category" : "Cascading Style Sheets",
+      "tags"     : "Cascading Style Sheets, CSS, HTML, HyperText Markup Language",
+      "url"      : "/blog/css-whats-the-difference-between-em-and-rem",
+      "date"     : "2020-06-06 08:00:00 +0000",
+      "excerpt"  : "If you have tried working with CSS, you'll have noticed two special units: em and rem — but what's the difference?"
+    },
+  
+    {
+      "title"    : "How to install developer tools on Mac without Xcode",
+      "category" : "Apple",
+      "tags"     : "Apple, Computer, Mac, Tools, Tutorial",
+      "url"      : "/blog/how-to-install-developer-tools-on-mac-without-xcode",
+      "date"     : "2020-05-30 08:00:00 +0000",
+      "excerpt"  : "See how you can download the Developer Tools without downloading 2+ GB of Xcode."
+    },
+  
+    {
+      "title"    : "Use a custom visual as a camera on Zoom and other services (aka: use OBS on Zoom and others)",
+      "category" : "Computer",
+      "tags"     : "Computer, Hack, Mac, PC, Tools, Tutorial, Zoom, Trick",
+      "url"      : "/blog/use-a-custom-visual-as-a-camera-on-zoom-or-use-obs-on-zoom",
+      "date"     : "2020-05-23 08:00:00 +0000",
+      "excerpt"  : "If you're here, you're looking for a way to pretend you're listening to your teacher while you're not. Well, you're in the right place."
+    },
+  
+    {
+      "title"    : "Around the World in 80 Days Level Editor",
+      "category" : "Games",
+      "tags"     : "Games, Tools, JavaScript, HTML, HyperText Markup Language, CSS, Cascading Style Sheets, JS",
+      "url"      : "/blog/around-the-world-in-80-days-level-editor",
+      "date"     : "2020-05-16 08:00:00 +0000",
+      "excerpt"  : "This level editor is made using pure HTML, JS and CSS. Nothing else. This also means that the site will also work offline."
+    },
+  
+    {
+      "title"    : "The wonderful tale of me hackintoshing my old PC",
+      "category" : "Apple",
+      "tags"     : "Apple, PC",
+      "url"      : "/blog/the-wonderful-tale-of-me-hackintoshing-my-old-pc",
+      "date"     : "2020-05-09 08:00:00 +0000",
+      "excerpt"  : "At first, there was just a MacBook Pro. It was fine, but the owner, geeky as he was, felt as if he needed another PC. Yeah that's me, and I succeeded."
+    },
+  
+    {
+      "title"    : "How to install Windows 7 on a MacBook from 2015",
+      "category" : "Apple",
+      "tags"     : "Apple, Mac, Tutorial, Dual-Boot, Computer",
+      "url"      : "/blog/how-to-install-windows-7-on-a-macbook-from-2015",
+      "date"     : "2020-04-01 08:00:00 +0000",
+      "excerpt"  : "Today, I'm gonna write a guide about how to install Windows 7 on a MacBook Pro, Retina, 13-inch, early 2015. No, this is not an April Fools joke."
+    },
+  
+    {
+      "title"    : "How I dual-booted Windows 10 and Windows 7 on a MacBook Pro from 2015",
+      "category" : "Apple",
+      "tags"     : "Apple, Computer, Mac, Windows, Tutorial, Dual-Boot",
+      "url"      : "/blog/how-i-dual-booted-windows-10-and-windows-7-on-a-macbook-pro-retina-early-2015",
+      "date"     : "2020-03-25 09:00:00 +0000",
+      "excerpt"  : "Yes, I know it's weird. But this quarantine has given me some free time to experiment, and today, I'm gonna share my story how I installed Windows 10 and Windows 7 in a dual-boot."
+    },
+  
+    {
+      "title"    : "How to save SHSH2 blobs",
+      "category" : "Apple",
+      "tags"     : "Apple, Jailbreak, Mac, Windows, Tutorial",
+      "url"      : "/blog/how-to-save-shsh2-blobs",
+      "date"     : "2019-11-26 17:45:00 +0000",
+      "excerpt"  : "On iDevices, blobs are essential for a successful downgrade. However, a new or inexperienced user might find trouble finding the right tools to save them."
+    },
+  
+    {
+      "title"    : "How to modify the macOS system name and icon",
+      "category" : "Apple",
+      "tags"     : "Apple, Computer, Hacking, Mac, Tutorial",
+      "url"      : "/blog/how-to-modify-macos-system-name",
+      "date"     : "2019-11-03 16:00:00 +0000",
+      "excerpt"  : "Learn how to change the OS string that shows up in the About this Mac screen."
+    },
+  
+    {
+      "title"    : "Do NOT use Freenom for long-term projects",
+      "category" : "Meta",
+      "tags"     : "Meta, Blog",
+      "url"      : "/blog/do-not-use-freenom-for-long-term-projects",
+      "date"     : "2019-10-30 17:30:23 +0000",
+      "excerpt"  : "Recently, I've switched domains from my old .tk domain (samplasion.tk) to a new one under the protective wing of JS.ORG (many thanks to them for offering me this free space). But what pushed me to do that?"
+    },
+  
+    {
+      "title"    : "The Nintendo Switch Lite JoyCon drift problem is real",
+      "category" : "Nintendo",
+      "tags"     : "Nintendo",
+      "url"      : "/blog/the-nintendo-switch-lite-joy-con-drift-problem-is-real",
+      "date"     : "2019-10-04 19:30:41 +0000",
+      "excerpt"  : "It's only been a little more than a couple weeks since the release of the new Nintendo Switch Lite, and it's already been found that its sticks are the same as its big brother's..."
+    },
+  
+    {
+      "title"    : "How to get a nice-looking terminal",
+      "category" : "Apple",
+      "tags"     : "Apple, Computer, Mac, Linux",
+      "url"      : "/blog/how-to-get-a-nice-looking-terminal",
+      "date"     : "2019-10-03 20:34:30 +0000",
+      "excerpt"  : "If you use the terminal on a regular basis, you know it looks kinda bad. But it's quite understandable, because the shells were made to be useful, not nice-looking. If you want to have a nice terminal, though, nothing can stop you."
+    },
+  
+    {
+      "title"    : "How to mount the ESP on macOS",
+      "category" : "Apple",
+      "tags"     : "Apple, Computer, Mac",
+      "url"      : "/blog/how-to-mount-the-esp-on-macos",
+      "date"     : "2019-09-30 19:27:14 +0000",
+      "excerpt"  : "How many times do you have to mount the ESP to your computer? I bet it's almost never. Well, in this post we'll not only see once again how to do so, but we'll also implement an alias to do so with a handy memorable shortcut."
+    },
+  
+    {
+      "title"    : "Great news for the jailbreaking world!",
+      "category" : "Jailbreak",
+      "tags"     : "Jailbreak, Apple, Hacking",
+      "url"      : "/blog/great-news-for-the-jb-world",
+      "date"     : "2019-09-27 15:15:01 +0000",
+      "excerpt"  : "It looks like the great minds of our wonderful community never stop surprising us. Why? @axi0mX on Twitter published a bootrom exploit called checkm8, for all devices A5-A11."
+    },
+  
+    {
+      "title"    : "The unc0ver jailbreak for starters",
+      "category" : "Tutorial",
+      "tags"     : "Tutorial, Jailbreak, Apple",
+      "url"      : "/blog/the-unc0ver-jailbreak-for-starters",
+      "date"     : "2019-09-24 13:12:01 +0000",
+      "excerpt"  : "Yesterday, unc0ver got bumped to version 3.7.0, adding support to A12 devices on iOS 12.4. You're interested, so you want to try it on your iPhone XS Max, but you don't know where to start. I've got you covered! In this post, we'll take a look at the basics of jailbreaking."
+    },
+  
+    {
+      "title"    : "How to build your own Chromium release for starters",
+      "category" : "Tutorial",
+      "tags"     : "Tutorial, Mac, Linux, Windows",
+      "url"      : "/blog/how-to-create-your-own-own-chromium-release-for-starters",
+      "date"     : "2019-08-28 16:43:00 +0000",
+      "excerpt"  : "In this post, we'll take a look at a comprehensive way to build a custom Chromium release."
+    },
+  
+    {
+      "title"    : "A post about themes",
+      "category" : "Meta",
+      "tags"     : "Meta, Blog",
+      "url"      : "/blog/a-post-about-themes",
+      "date"     : "2019-08-25 21:46:32 +0000",
+      "excerpt"  : "Just me talking about the blog's theme."
+    },
+  
+    {
+      "title"    : "Welcome, Ghost!",
+      "category" : "Meta",
+      "tags"     : "Meta, Blog, Backend",
+      "url"      : "/blog/welcome-ghost",
+      "date"     : "2019-08-20 11:20:03 +0000",
+      "excerpt"  : "A brief description of the new blog backend."
+    },
+  
+    {
+      "title"    : "Tech Showcase: Yamamura",
+      "category" : "Tech Showcase",
+      "tags"     : "Tech Showcase, Bot, JavaScript",
+      "url"      : "/blog/tech-showcase-yamamura",
+      "date"     : "2019-07-17 13:42:00 +0000",
+      "excerpt"  : "Today I want to showcase a bot NightYoshi and I made."
+    },
+  
+    {
+      "title"    : "How to install NPM modules on Glitch",
+      "category" : "Tutorial",
+      "tags"     : "Tutorial, Bot, JavaScript",
+      "url"      : "/blog/how-to-install-npm-modules-on-glitch",
+      "date"     : "2018-10-15 13:38:00 +0000",
+      "excerpt"  : "A quick tutorial on how to install NPM modules on Glitch"
+    },
+  
+    {
+      "title"    : "Let&#39;s make: Nintendo block to Megabyte/Gigabyte converter",
+      "category" : "Nintendo",
+      "tags"     : "Nintendo, Computer",
+      "url"      : "/blog/lets-make-nintendo-block-to-megabyte-gigabyte-converter",
+      "date"     : "2018-08-18 08:20:00 +0000",
+      "excerpt"  : "In this post we'll make a block converter in Ruby."
+    },
+  
+    {
+      "title"    : "Nintendo has been locking down their CDN",
+      "category" : "Nintendo",
+      "tags"     : "Nintendo, FreeShop, Hacking",
+      "url"      : "/blog/nintendo-has-been-locking-down-their-cdn-is-this-the-end-of-freeshop-and-wii-u-usb-helper",
+      "date"     : "2018-08-10 13:50:00 +0000",
+      "excerpt"  : "Nintendo has locked down their CDN. This means that we will not be able to access their eShop servers anymore."
+    },
+  
+    {
+      "title"    : "Enable Dark Mode on your Mac with this tool",
+      "category" : "Apple",
+      "tags"     : "Apple, Tools, Mac, Tutorial",
+      "url"      : "/blog/enable-dark-mode-on-your-mac-with-this-tool",
+      "date"     : "2017-11-09 18:18:00 +0000",
+      "excerpt"  : "In this post, we'll see how to darken macOS apps in a neat way!"
+    },
+  
+    {
+      "title"    : "My recommendations for the perfect Nintendo 3DS",
+      "category" : "Nintendo",
+      "tags"     : "Nintendo, Cia, FreeShop, Injections",
+      "url"      : "/blog/my-recommendations-for-the-perfect-nintendo-3ds",
+      "date"     : "2017-11-08 18:18:00 +0000",
+      "excerpt"  : "In this post, I'll show you my recommendations for the perfect unmodified Nintendo 3DS."
+    },
+  
+    {
+      "title"    : "Update your encTitleKeys with an homebrew",
+      "category" : "Nintendo",
+      "tags"     : "Nintendo, Updates, Cia, FreeShop",
+      "url"      : "/blog/update-your-enctitlekeys-with-an-homebrew",
+      "date"     : "2017-11-05 20:44:00 +0000",
+      "excerpt"  : "In this post, we'll take a look to a way to update the title keys for freeShop."
+    },
+  
+    {
+      "title"    : "I injected SMB3Mix into my 3DS!",
+      "category" : "Nintendo",
+      "tags"     : "Nintendo, Updates, Injections, Cia",
+      "url"      : "/blog/i-injected-smb3mix-into-my-3ds",
+      "date"     : "2017-11-05 09:21:00 +0000",
+      "excerpt"  : "Yesterday I got SMB 3Mix in my Nintendo 3DS injected in a .cia"
+    }
+  
+]
